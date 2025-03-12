@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "subscribe_banner_GQbM64": {
+      "type": "subscribe-banner",
+      "blocks": {
+        "subscribe_item_bKggY7": {
+          "type": "subscribe_item",
+          "settings": {
+            "subscribe_text": "Farm-Direct Flowers",
+            "dots_visible": true
+          }
+        },
+        "subscribe_item_M7Vykb": {
+          "type": "subscribe_item",
+          "settings": {
+            "subscribe_text": "Starting at $49",
+            "dots_visible": true
+          }
+        },
+        "subscribe_item_YcLdpk": {
+          "type": "subscribe_item",
+          "settings": {
+            "subscribe_text": "Skip or Cancel at Anytime",
+            "dots_visible": true
+          }
+        },
+        "subscribe_item_gEBjTr": {
+          "type": "subscribe_item",
+          "settings": {
+            "subscribe_text": "Weekly, Bi-Weekly, Monthly, orCustom Delivery",
+            "dots_visible": true
+          }
+        },
+        "subscribe_item_Dg78kU": {
+          "type": "subscribe_item",
+          "settings": {
+            "subscribe_text": "Complimentary Vase",
+            "dots_visible": true
+          }
+        }
+      },
+      "block_order": [
+        "subscribe_item_bKggY7",
+        "subscribe_item_M7Vykb",
+        "subscribe_item_YcLdpk",
+        "subscribe_item_gEBjTr",
+        "subscribe_item_Dg78kU"
+      ],
+      "settings": {
+        "dsk_banner_image": "shopify://shop_images/b69b87ca6311343fec2e92cef1a768d7.png",
+        "mbl_banner_image": "shopify://shop_images/d6f7ea66a2b413382e9943126ac57326.png",
+        "heading": "SUBSCRIBE & SAVE",
+        "subheading": "The Afleur atelier club",
+        "button_text": "Join Now",
+        "dsk_align": "left_middle",
+        "mbl_align": "center_top",
+        "dsk_pad_top": 65,
+        "dsk_pad_bottom": 65,
+        "dsk_pad_inline": 205,
+        "mbl_pad_top": 40,
+        "mbl_pad_bottom": 40,
+        "mbl_pad_inline": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "subscribe_banner_GQbM64"
+  ]
+}
