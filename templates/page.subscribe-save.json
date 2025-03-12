@@ -66,6 +66,7 @@
         "heading": "SUBSCRIBE & SAVE",
         "subheading": "The Afleur atelier club",
         "button_text": "Join Now",
+        "button_link": "",
         "dsk_align": "left_middle",
         "mbl_align": "center_top",
         "dsk_pad_top": 65,
@@ -73,12 +74,64 @@
         "dsk_pad_inline": 205,
         "mbl_pad_top": 40,
         "mbl_pad_bottom": 40,
-        "mbl_pad_inline": 40
+        "mbl_pad_inline": 20
+      }
+    },
+    "how_it_work_3Y7Dky": {
+      "type": "how-it-work",
+      "blocks": {
+        "clipart_item_tPPKdc": {
+          "type": "clipart_item",
+          "settings": {
+            "clipart_image": "shopify://shop_images/c643463056ea79eee9e697e713aca9d0.png",
+            "clipart_heading": "Cut to Order, Farm-Fresh",
+            "clipart_description": "Flowers are cut fresh when you order, and delivered directly to your doorstep in days."
+          }
+        },
+        "clipart_item_7wJkbc": {
+          "type": "clipart_item",
+          "settings": {
+            "clipart_image": "shopify://shop_images/16a1339fe8159eabe96cd2e5ff690a02.png",
+            "clipart_heading": "Elevate Your Space, Not Your Budget",
+            "clipart_description": "Enjoy 30% off and complimentary delivery on all orders."
+          }
+        },
+        "clipart_item_f7iGVr": {
+          "type": "clipart_item",
+          "settings": {
+            "clipart_image": "shopify://shop_images/67abbc7b3bdfe8ff34c0da9ab68cbac5.png",
+            "clipart_heading": "Personalized to Your Desires",
+            "clipart_description": "Enjoy 30% off and complimentary delivery on all orders."
+          }
+        },
+        "clipart_item_4mmbR9": {
+          "type": "clipart_item",
+          "settings": {
+            "clipart_image": "shopify://shop_images/15a18583ae87908173bae01e6107ad66.png",
+            "clipart_heading": "Complimentary Vase",
+            "clipart_description": "Receive a complimentary vase with your initial subscription delivery."
+          }
+        }
+      },
+      "block_order": [
+        "clipart_item_tPPKdc",
+        "clipart_item_7wJkbc",
+        "clipart_item_f7iGVr",
+        "clipart_item_4mmbR9"
+      ],
+      "settings": {
+        "heading": "How it works",
+        "dsk_grid": "grid_4",
+        "dsk_pad_top": 80,
+        "dsk_pad_bottom": 80,
+        "mbl_pad_top": 50,
+        "mbl_pad_bottom": 50
       }
     }
   },
   "order": [
     "main",
-    "subscribe_banner_GQbM64"
+    "subscribe_banner_GQbM64",
+    "how_it_work_3Y7Dky"
   ]
 }

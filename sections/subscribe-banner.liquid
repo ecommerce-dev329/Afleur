@@ -1,4 +1,4 @@
-{{ 'subscribe-save.css' | asset_url | stylesheet_tag }}
+{{ 'subscribe-banner.css' | asset_url | stylesheet_tag }}
 {% style %}
   .banner-text-wrapper {
     padding-top: {{ section.settings.dsk_pad_top }}px;
@@ -47,11 +47,18 @@
     bottom: 0;
   }
 
-  @media screen and (max-width: 748px) {
+  @media screen and (max-width: 560px) {
     .banner-text-wrapper {
-      padding-top: {{ section.settings.mbl_pad_top }}px;
-      padding-bottom: {{ section.settings.mbl_pad_bottom }}px;
-      padding-inline: {{ section.settings.mbl_pad_inline }}px;
+      padding-top: {{ section.settings.mbl_pad_top }}px !important;
+      padding-bottom: {{ section.settings.mbl_pad_bottom }}px !important;
+      padding-inline: {{ section.settings.mbl_pad_inline }}px !important;
+    }
+    .section--subscribe-banner .heading {
+      font-size: 35px;
+    }
+    .section--subscribe-banner .subscribe-item {
+      font-size: 16px;
+      list-style: none;
     }
     .banner-text-wrapper-mbl-left_top {
       left: 0;
@@ -70,16 +77,19 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%);
+      text-align: center;
     }
     .banner-text-wrapper-mbl-center_middle {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      text-align: center;
     }
     .banner-text-wrapper-mbl-center_bottom {
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+      text-align: center;
     }
     .banner-text-wrapper-mbl-right_top {
       right: 0;

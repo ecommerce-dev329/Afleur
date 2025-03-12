@@ -1,0 +1,114 @@
+.section--subscribe-works {
+  max-width: 1120px;
+  width: 100%;
+  margin: auto;
+}
+.section--subscribe-works .clipart-item-wrapper {
+  gap: 30px;
+  display: grid;
+  padding-inline: 70px;
+}
+.section--subscribe-works .clipart-item-wrapper-grid_3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section--subscribe-works .clipart-item-wrapper-grid_4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section--subscribe-works .clipart-item {
+  width: 200px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.section--subscribe-works .clipart-item-wrapper-grid_3 .clipart-item {
+  margin: inherit;
+}
+.section--subscribe-works
+  .clipart-item-wrapper-grid_3
+  .clipart-item:nth-child(3n - 1) {
+  margin: auto;
+}
+.section--subscribe-works
+  .clipart-item-wrapper-grid_3
+  .clipart-item:nth-child(3n) {
+  margin-left: auto;
+}
+.section--subscribe-works .clipart-item img {
+  width: 80%;
+  height: auto;
+}
+.section--subscribe-works * {
+  color: #171717;
+}
+.section--subscribe-works .heading {
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+.section--subscribe-works .clipart-item > div {
+  text-align: center;
+}
+.section--subscribe-works .clipart-heading {
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-inline: 2px;
+  vertical-align: middle;
+}
+.section--subscribe-works .clipart-description {
+  font-family: Mixta Sharp;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+@media screen and (max-width: 800px) {
+  .section--subscribe-works .clipart-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section--subscribe-works .clipart-item-wrapper-grid_3 .clipart-item {
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section--subscribe-works .heading {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .section--subscribe-works .clipart-item-wrapper {
+    padding-inline: 20px;
+    column-gap: 10px;
+    row-gap: 40px;
+  }
+  .section--subscribe-works .clipart-item {
+    width: 170px;
+  }
+  .section--subscribe-works .clipart-item .clipart-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .section--subscribe-works .clipart-item .clipart-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

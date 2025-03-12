@@ -1,0 +1,145 @@
+{{ 'subscribe-works.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .section--subscribe-works {
+    padding-top: {{ section.settings.dsk_pad_top }}px;
+    padding-bottom: {{ section.settings.dsk_pad_bottom }}px;
+  }
+
+  @media screen and (max-width: 748px) {
+    .section--subscribe-works {
+      padding-top: {{ section.settings.mbl_pad_top }}px;
+      padding-bottom: {{ section.settings.mbl_pad_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="section--subscribe-works">
+  <div class="heading">{{ section.settings.heading }}</div>
+  <div class="clipart-item-wrapper clipart-item-wrapper-{{ section.settings.dsk_grid }}">
+    {%- if section.blocks != blank -%}
+      {% for block in section.blocks %}
+        <div class="clipart-item">
+          {{ block.settings.clipart_image | image_url: width: auto | image_tag: loading: 'lazy', alt: block.settings.clipart_image.alt }}
+          <div class="clipart-heading">{{ block.settings.clipart_heading }}</div>
+          <div class="clipart-description">{{ block.settings.clipart_description }}</div>
+        </div>
+      {% endfor %}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Subscribe Works",
+    "tag": "section",
+    "class": "section-subscribe-works",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "How it works"
+      },
+      {
+        "type": "header",
+        "content": "Layout Settings"
+      },
+      {
+        "type": "select",
+        "id": "dsk_grid",
+        "label": "Desktop Grid",
+        "options": [
+          {
+            "value": "grid_3",
+            "label": "Grid 3"
+          }, {
+            "value": "grid_4",
+            "label": "Grid 4"
+          }
+        ],
+        "default": "grid_3"
+      }, {
+        "type": "range",
+        "id": "dsk_pad_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Top",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "dsk_pad_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Bottom",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "mbl_pad_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Top",
+        "default": 50
+      }, {
+        "type": "range",
+        "id": "mbl_pad_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Bottom",
+        "default": 50
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Clipart Item",
+        "type": "clipart_item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "clipart_image",
+            "label": "Clipart Image"
+          }, {
+            "type": "text",
+            "id": "clipart_heading",
+            "label": "Clipart Heading",
+            "default": "Cut to Order, Farm-Fresh"
+          }, {
+            "type": "textarea",
+            "id": "clipart_description",
+            "label": "Clipart Description",
+            "default": "Flowers are cut fresh when you order, and delivered directly to your doorstep in days."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Subscribe Works",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "clipart_item"
+          }, {
+            "type": "clipart_item"
+          }, {
+            "type": "clipart_item"
+          }, {
+            "type": "clipart_item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
