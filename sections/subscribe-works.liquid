@@ -20,7 +20,9 @@
     {%- if section.blocks != blank -%}
       {% for block in section.blocks %}
         <div class="clipart-item">
-          {{ block.settings.clipart_image | image_url: width: auto | image_tag: loading: 'lazy', alt: block.settings.clipart_image.alt }}
+          {% if block.settings.clipart_image != blank %}
+            {{ block.settings.clipart_image | image_url: width: auto | image_tag: loading: 'lazy', alt: block.settings.clipart_image.alt }}
+          {% endif %}
           <div class="clipart-heading">{{ block.settings.clipart_heading }}</div>
           <div class="clipart-description">{{ block.settings.clipart_description }}</div>
         </div>
