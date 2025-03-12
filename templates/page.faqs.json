@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "breadcrumb_iBGXJi": {
+      "type": "breadcrumb",
+      "settings": {
+        "brc_container": "container",
+        "brc_text_alignment": "start",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_tabs_3L6UTG": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "image_card_m9bmnK": {
+          "type": "image_card",
+          "settings": {
+            "image_position": "left",
+            "image_alignment": "start",
+            "image_width": 40,
+            "layout": "layout2",
+            "text_color": "#ffffff",
+            "image": "shopify://shop_images/Image_-_Happy_woman_with_flowers_embracing_man._Young_couple_are_together_at_home_3.png",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 20,
+            "sub_heading": "",
+            "heading": "STILL NEEDS HELP?",
+            "heading_size": "h1",
+            "description": "",
+            "button_label": "Contact us",
+            "button_link": "shopify://pages/contact",
+            "button_style": "btn--white",
+            "animations": "inherit"
+          }
+        },
+        "1655868348d34715f4-0": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "1. What types of roses does AFLEUR offer?",
+            "content": "<p>Here, you’ll find answers to some of the most common questions we receive. If you have any additional inquiries, feel free to contact us!</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": true
+          }
+        },
+        "1655868348d34715f4-1": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "2. How do I place an order?",
+            "content": "<p>You can easily place an order through our website by selecting your desired roses and following the checkout process. If you need assistance, our concierge team is available to help.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "9891166a-7648-4555-84e2-cfb0e9832a21": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "3. Can I customize my order?",
+            "content": "<p>Yes! We offer flexible ordering options that allow you to customize your orders to meet your specific needs. Whether you require regular deliveries or a one-time purchase, we can tailor a solution for you.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "18680409-0b8f-43b1-97dc-07c8957da9f8": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "4. How can I track my order?",
+            "content": "<p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track the status of your delivery.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_AG6CUJ": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "5. What is your return policy?",
+            "content": "<p>We want you to be completely satisfied with your AFLEUR roses. If you are not happy with your order, please contact our concierge team within 24 hours of receiving your flowers, and we will work with you to find a solution.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_V8Aer6": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "6. What should I do if my flowers arrive damaged or wilted?",
+            "content": "<p>While we take great care in packing and shipping our roses, it’s natural for cut flowers to lose some moisture during transit. If your flowers are wilted, please follow our flower care instructions provided with each shipment. If they are damaged or you are still not satisfied after following the care instructions, please email us photos of the issue, and we will be happy to assist you.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_DqLqeQ": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "7. How far in advance should I place my order?",
+            "content": "<p>To ensure your AFLEUR roses arrive in peak condition and on time for your special occasion, we recommend placing your order at least 4 days in advance of your desired delivery date.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_6grLbC": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "8. Can I make changes to my order after it has been placed?",
+            "content": "<p>If you need to make changes to your order, please contact our concierge team as soon as possible. We will do our best to accommodate your request before your order is shipped.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_7PmBRC": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "9. Do you offer wholesale options?",
+            "content": "<p>Yes! We have a dedicated wholesale program designed to provide businesses with premium quality roses at competitive pricing. For more information, please contact our wholesale team at Wholesale@AFLEUR.com.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        },
+        "content_UpqiM3": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "title": "10. How can I contact AFLEUR for further questions?",
+            "content": "<p>You can reach us via email at info@AFLEUR.com, call us at [Your Phone Number], or visit our Contact Us page for more options.</p>",
+            "custom_liquid": "",
+            "content_page": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "image_card_m9bmnK",
+        "1655868348d34715f4-0",
+        "1655868348d34715f4-1",
+        "9891166a-7648-4555-84e2-cfb0e9832a21",
+        "18680409-0b8f-43b1-97dc-07c8957da9f8",
+        "content_AG6CUJ",
+        "content_V8Aer6",
+        "content_DqLqeQ",
+        "content_6grLbC",
+        "content_7PmBRC",
+        "content_UpqiM3"
+      ],
+      "custom_css": [
+        ".f-image-card__content-box a {opacity: 1 !important; text-transform: none; background: #ff2424; color: white;}",
+        ".collapsible__button-text {color: #ff2424;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "section_header_padding_bottom": "medium",
+        "heading": "WELCOME TO THE AFLEUR FAQ PAGE!",
+        "heading_size": "h-xl",
+        "subheading": "",
+        "description": "<p>Here, you’ll find answers to some of the most common questions we receive. If you have any additional inquiries, feel free to contact us!</p>",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "item_heading_font": "heading",
+        "item_heading_size": "h3",
+        "column_gap": "extra-large",
+        "content_width": "narrow",
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumb_iBGXJi",
+    "collapsible_tabs_3L6UTG"
+  ]
+}

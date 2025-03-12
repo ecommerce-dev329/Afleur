@@ -1,0 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "c67b7c41-4a92-419d-85c6-c970bb43bf2d": {
+          "type": "badge",
+          "settings": {}
+        },
+        "text_bhpYQi": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "Subscribe & Save",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h0"
+          }
+        },
+        "richtext_KnxJTj": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Farm- Direct Flowers<br/>Starting at $49<br/>Skip or Cancel at anytime<br/>Weekly, Bi-Weekly, Monthly, or Custom Deliveré<br/>Complimentarú vase</p>"
+          }
+        },
+        "custom_liquid_4jbdMj": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.metafields.custom.short_description}}"
+          }
+        },
+        "globo_product_option_app_block_KRqJK9": {
+          "type": "shopify://apps/globo-product-option/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+          "settings": {}
+        },
+        "loop_subscriptions_loop_widget_wtqq64": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
+        "video_greet_gift_messages_video_greet_r8pN3w": {
+          "type": "shopify://apps/video-greet-gift-messages/blocks/video-greet/df4fa3e1-0f09-4c28-8730-57c66b50767d",
+          "settings": {
+            "horizontal_alignment": "stretch",
+            "button_p": "",
+            "button_m": "",
+            "custom_css": "",
+            "hide_collection_list": [],
+            "reload_sections": "",
+            "button_locales": false,
+            "button_gift_text": "",
+            "button_title": "Include a gift message?",
+            "button_title_added": "Added to cart",
+            "button_instructions": "You'll get an email after payment to record your video message.",
+            "button_helpertext": "The recipient receives a QR code attached to your gift order — they scan the QR code with their phone to get your message.",
+            "note_char_limit": 120,
+            "button_title_font_size": 16,
+            "button_instructions_font_size": 14,
+            "button_border_radius": 8,
+            "button_header_color": "#000000",
+            "gift_icon_color": "#ff2424",
+            "border_color": "#ff2424",
+            "button_checkbox_color": "#ff2424",
+            "button_icon_color": "#ffffff",
+            "button_title_color": "#000000",
+            "button_background_color": "#ffffff"
+          }
+        },
+        "4813cc96-81ff-4094-bd6a-4bf96eab69e9": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "BUY IT WITH",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 10,
+            "products_per_page": 1,
+            "enable_slider": true,
+            "image_ratio": "adapt",
+            "enable_quick_add": true,
+            "enable_quick_view": false,
+            "pcard_show_color_swatch": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_atc_button": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "addons": {
+          "type": "addons",
+          "settings": {
+            "show_share": true,
+            "show_ask_question": true
+          }
+        }
+      },
+      "block_order": [
+        "c67b7c41-4a92-419d-85c6-c970bb43bf2d",
+        "text_bhpYQi",
+        "title",
+        "richtext_KnxJTj",
+        "custom_liquid_4jbdMj",
+        "globo_product_option_app_block_KRqJK9",
+        "loop_subscriptions_loop_widget_wtqq64",
+        "video_greet_gift_messages_video_greet_r8pN3w",
+        "4813cc96-81ff-4094-bd6a-4bf96eab69e9",
+        "buy_buttons",
+        "addons"
+      ],
+      "custom_css": [
+        ".f-section {background: #fffcf4; margin-bottom: 0; padding-bottom: 60px;}",
+        ".f-product-single__title {color: #f00;}",
+        ".f-product-single__blocks {color: #0b0a0a;}",
+        ".collapsible__item span {color: #0b0a0a;}",
+        ".f-product-single__addon-buttons button {color: #0b0a0a;}",
+        ".loop-widget-purchase-option.loop-widget-purchase-option-border-top.loop-widget-purchase-option-onetime, .loop-widget-purchase-option-price-each-container {display: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "show_breadcrumb": true,
+        "enable_sticky_info": true,
+        "media_layout": "carousel",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "show_featured_media": false
+      }
+    },
+    "rich_text_98HVUd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_trnJyh": {
+          "type": "heading",
+          "settings": {
+            "heading": "HOW IT WORKS",
+            "heading_size": "h-xl",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_trnJyh"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "center",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "multicolumn_g94PV3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CVi6kY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Flowers_are_cut_fresh_1.png",
+            "image_link": "",
+            "title": "Cut to Order, Farm - Fresh",
+            "heading_size": "h3",
+            "text": "<p>Flowers are cut fresh when you order, and delivered directly to your doorstep in days.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_TU69y6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/living_room_with_woman_and_flowers.png",
+            "image_link": "",
+            "title": "Elevate your space, not your budget",
+            "heading_size": "h3",
+            "text": "<p>Enjoy 30%off and complimentary delivery on all orders.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_tbHr3T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Flowers_are_cut_fresh.png",
+            "image_link": "",
+            "title": "Personalized yo your desires",
+            "heading_size": "h3",
+            "text": "<p>Select the bouquet, recipient, and date for each delivery or set your preferences once. Skip or cancel anytime.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_mcr8DN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/vase_in_a_livingroom.png",
+            "image_link": "",
+            "title": "Complimentary Vase",
+            "heading_size": "h3",
+            "text": "<p>Receive a complimentary vase with your initial subscription delivery.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        }
+      },
+      "block_order": [
+        "column_CVi6kY",
+        "column_TU69y6",
+        "column_tbHr3T",
+        "column_mcr8DN"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-1bc30329-d113-489f-8c6c-cf8807f6cef9",
+        "section_header_padding_bottom": "medium",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "layout": "vertical",
+        "text_alignment": "center",
+        "image_width": "fullwidth",
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_swipe_mobile": false,
+        "column_mobile": "1",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-1",
+        "remove_params": false,
+        "section_header_padding_bottom": "large",
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "description": "",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "extra-small",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "show_nav": true,
+        "show_dots": false,
+        "enable_swipe_mobile": true,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_98HVUd",
+    "multicolumn_g94PV3",
+    "product-recommendations"
+  ]
+}

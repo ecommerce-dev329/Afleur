@@ -1,0 +1,550 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "c67b7c41-4a92-419d-85c6-c970bb43bf2d": {
+          "type": "badge",
+          "settings": {}
+        },
+        "text_RRBFCp": {
+          "type": "text",
+          "repeater": "{{ product.metafields.shopify.arrangement.value }}",
+          "settings": {
+            "icon": "none",
+            "text": "{{ product.metafields.custom.flower_color_titles.value }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h0"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_sale_badge": false,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "variant_picker_show_selected": true,
+            "variant_picker_dont_select_the_default_variant": false,
+            "size_title": "Size Chart",
+            "size_chart_from_page": "size-chart"
+          }
+        },
+        "loop_subscriptions_loop_widget_N98JU6": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
+        "essential_upsell_app_block_jUML8V": {
+          "type": "shopify://apps/essential-upsell/blocks/app-block/50627fd9-24fd-4250-8614-accc12826d80",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_atc_button": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "video_greet_gift_messages_video_greet_GzzVzw": {
+          "type": "shopify://apps/video-greet-gift-messages/blocks/video-greet/df4fa3e1-0f09-4c28-8730-57c66b50767d",
+          "settings": {
+            "horizontal_alignment": "stretch",
+            "button_p": "",
+            "button_m": "",
+            "custom_css": "",
+            "hide_collection_list": [],
+            "reload_sections": "",
+            "button_locales": false,
+            "button_gift_text": "",
+            "button_title": "Include a gift message?",
+            "button_title_added": "Added to cart",
+            "button_instructions": "You'll get an email after payment to record your video message.",
+            "button_helpertext": "The recipient receives a QR code attached to your gift order — they scan the QR code with their phone to get your message.",
+            "note_char_limit": 120,
+            "button_title_font_size": 16,
+            "button_instructions_font_size": 14,
+            "button_border_radius": 8,
+            "button_header_color": "#000000",
+            "gift_icon_color": "#000000",
+            "border_color": "#000000",
+            "button_checkbox_color": "#000000",
+            "button_icon_color": "#ffffff",
+            "button_title_color": "#000000",
+            "button_background_color": "#ffffff"
+          }
+        },
+        "4813cc96-81ff-4094-bd6a-4bf96eab69e9": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "BUY IT WITH",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 10,
+            "products_per_page": 1,
+            "enable_slider": true,
+            "image_ratio": "adapt",
+            "enable_quick_add": true,
+            "enable_quick_view": false,
+            "pcard_show_color_swatch": true
+          }
+        }
+      },
+      "block_order": [
+        "c67b7c41-4a92-419d-85c6-c970bb43bf2d",
+        "text_RRBFCp",
+        "title",
+        "price",
+        "variant_picker",
+        "loop_subscriptions_loop_widget_N98JU6",
+        "essential_upsell_app_block_jUML8V",
+        "buy_buttons",
+        "video_greet_gift_messages_video_greet_GzzVzw",
+        "4813cc96-81ff-4094-bd6a-4bf96eab69e9"
+      ],
+      "custom_css": [
+        ".f-section {background: #fffcf4; margin-bottom: 0; padding-bottom: 60px;}",
+        ".f-product-single__title {color: #f00;}",
+        ".f-product-single__blocks {color: #0b0a0a;}",
+        ".collapsible__item span {color: #0b0a0a;}",
+        ".f-product-single__addon-buttons button {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "show_breadcrumb": true,
+        "enable_sticky_info": true,
+        "media_layout": "stacked",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "show_featured_media": false
+      }
+    },
+    "73c8e618-10a0-43bf-b1d9-fa6707a4b913": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "74dc4299-fedb-45c6-9455-f3dd358440e7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Capa_1.svg",
+            "image_height": 24,
+            "image_link": "",
+            "use_custom_spacing": true,
+            "margin_left": 0,
+            "margin_right": 10,
+            "margin_left_mobile": 0,
+            "margin_right_mobile": 10
+          }
+        },
+        "c31917cb-ef90-4fe6-8c66-6d4f3a7d8874": {
+          "type": "announcement",
+          "settings": {
+            "text": "Ethically Made In Certified Factories",
+            "font_family": "body",
+            "text_size": 18,
+            "text_link": "",
+            "use_custom_spacing": true,
+            "margin_left": 0,
+            "margin_right": 60,
+            "margin_left_mobile": 0,
+            "margin_right_mobile": 40
+          }
+        },
+        "26b52c8a-5533-4cee-a9e2-b2cfc3830b8a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Capa_2.svg",
+            "image_height": 24,
+            "image_link": "",
+            "use_custom_spacing": true,
+            "margin_left": 0,
+            "margin_right": 10,
+            "margin_left_mobile": 0,
+            "margin_right_mobile": 10
+          }
+        },
+        "8d95b262-4168-4c7f-9457-5897c7935129": {
+          "type": "announcement",
+          "settings": {
+            "text": "Made From Recycled Materials",
+            "font_family": "body",
+            "text_size": 18,
+            "text_link": "",
+            "use_custom_spacing": true,
+            "margin_left": 0,
+            "margin_right": 60,
+            "margin_left_mobile": 0,
+            "margin_right_mobile": 40
+          }
+        }
+      },
+      "block_order": [
+        "74dc4299-fedb-45c6-9455-f3dd358440e7",
+        "c31917cb-ef90-4fe6-8c66-6d4f3a7d8874",
+        "26b52c8a-5533-4cee-a9e2-b2cfc3830b8a",
+        "8d95b262-4168-4c7f-9457-5897c7935129"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "container-full",
+        "color_schema": "scheme-cd86e7e6-de2f-48b8-a41b-9e9c750ce36e",
+        "section_header_padding_bottom": "medium",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "alignment": "center",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.3,
+        "item_gap": 50,
+        "item_gap_mobile": 30,
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "custom_id": "",
+        "custom_class": "border-top border-bottom"
+      }
+    },
+    "image_with_text_xidW7p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wfK4a3": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT AFLEUR,",
+            "heading_size": "h-xl"
+          }
+        },
+        "subheading_8z6BHh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "We are passionate about transforming spaces with the beauty of fresh, vibrant roses."
+          }
+        },
+        "text_QqtKzL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a family-owned business with over 40 years of experience in the floral industry, we understand the profound impact that exquisite blooms can have on any environment. Our journey begins in the lush fields of Ecuador, where we partner exclusively with dedicated farmers who share our commitment to quality and sustainability.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wfK4a3",
+        "subheading_8z6BHh",
+        "text_QqtKzL"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px;}",
+        ".mega-description {color: #0b0a0a;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/image_product_1.webp",
+        "image_width": "50%",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_XpadYp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7JLPxX": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR ROSES",
+            "heading_size": "h-xl"
+          }
+        },
+        "subheading_rXk46A": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "are hand-picked at their peak,"
+          }
+        },
+        "text_dTbGFY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ensuring maximum freshness, vibrant colors, and long-lasting beauty. We take pride in delivering not just flowers, but an experience that elevates your ambiance and leaves a lasting impression on your guests. With a diverse selection of classic and uniquely dyed roses, we cater to the unique aesthetic preferences of our clients, whether for restaurants, hotels, spas, or special events.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7JLPxX",
+        "subheading_rXk46A",
+        "text_dTbGFY"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px;}",
+        ".mega-description {color: white;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "accent",
+        "image": "shopify://shop_images/image_product_2.webp",
+        "image_width": "50%",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-1",
+        "remove_params": false,
+        "section_header_padding_bottom": "large",
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "description": "",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "extra-small",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "show_nav": true,
+        "show_dots": false,
+        "enable_swipe_mobile": true,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "animations": "inherit"
+      }
+    },
+    "rich_text_TJkXxd": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DkFfXX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sign Up Today!"
+          }
+        },
+        "text_YDhRqA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ready to elevate your floral experience? Sign up for our subscription service today and enjoy complimentary shipping on your first order!</p>"
+          }
+        },
+        "button_FWzWfR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Subscribe now",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DkFfXX",
+        "text_YDhRqA",
+        "button_FWzWfR"
+      ],
+      "custom_css": [
+        ".rich-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0870/3167/7246/files/our_process_2.webp?v=1727729807\"); padding: 120px 0;}",
+        ".rich-text__heading {text-transform: none; font-weight: 400; font-size: 20px;}",
+        ".rich-text__subheading {font-weight: 700; font-size: 40px; text-transform: none;}",
+        ".rich-text__text {font-weight: 400; font-size: 24px; color: #ff2424;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container-narrow",
+        "color_schema": "scheme-bc4a096f-47f9-4141-9ef7-6cfa59db2227",
+        "text_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product_tabs_47VcM8": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_LF9G8q": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "the-sun-garden-flowers"
+          }
+        },
+        "tab_PmAdhx": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "spray-roses"
+          }
+        },
+        "tab_afBwMc": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "luxury-roses"
+          }
+        }
+      },
+      "block_order": [
+        "tab_LF9G8q",
+        "tab_PmAdhx",
+        "tab_afBwMc"
+      ],
+      "custom_css": [
+        ".section__heading {text-transform: uppercase;}",
+        ".product-card__title {color: #600; text-transform: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "layout": "horizontal",
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h-xl",
+        "description": "",
+        "limit": 3,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "show_nav": false,
+        "show_dots": false,
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "enable_swipe_mobile": true,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "1735059908e1f06be5": {
+      "type": "apps",
+      "settings": {
+        "container": "container",
+        "color_schema": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_mXzpT3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_teirYU": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.short_description.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "text_d9Ua9A": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_9jhLtm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_teirYU",
+        "text_d9Ua9A",
+        "button_9jhLtm"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "",
+        "image_width": "50%",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "73c8e618-10a0-43bf-b1d9-fa6707a4b913",
+    "image_with_text_xidW7p",
+    "image_with_text_XpadYp",
+    "product-recommendations",
+    "rich_text_TJkXxd",
+    "product_tabs_47VcM8",
+    "1735059908e1f06be5",
+    "image_with_text_mXzpT3"
+  ]
+}

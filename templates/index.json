@@ -1,0 +1,624 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_rqwjTJ": {
+      "type": "slideshow",
+      "blocks": {
+        "video_76xjkM": {
+          "type": "video",
+          "settings": {
+            "shopify_video": "shopify://files/videos/Video Background Test - Made with Clipchamp.mp4",
+            "video_alt_text": "",
+            "image_overlay_opacity": 30,
+            "content_position": "left-middle",
+            "text_alignment": "left",
+            "text_color": "#fffcf4",
+            "title": "FARM-FRESH - CUT TO ORDER",
+            "heading_size": "h-xl",
+            "subheading": "",
+            "description": "",
+            "desc_size": "text-desc-lg",
+            "button_text_1": "SHOP ROSES",
+            "button_link_1": "shopify://collections/all",
+            "button_style_1": "btn--secondary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
+        "slide_f8kHVy": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify://shop_images/raws_ccp.jpg",
+            "mb_background": "shopify://shop_images/raws_ccp.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "right-middle",
+            "text_alignment": "right",
+            "text_color": "#ff0000",
+            "title": "ECUADORIAN ROSES",
+            "heading_size": "h-xl",
+            "subheading": "",
+            "description": "<p>Artisan Curated, Cut to Order</p>",
+            "desc_size": "text-desc-base",
+            "button_text_1": "Shop Now",
+            "button_link_1": "https://afleur.com/collections/all",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
+        "slide_DzfWhx": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify://shop_images/raws_ccp-2.jpg",
+            "mb_background": "shopify://shop_images/raws_ccp-2.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "left-middle",
+            "text_alignment": "left",
+            "text_color": "#ff0000",
+            "title": "FRESH ECUADORIAN ROSES",
+            "heading_size": "h-xl",
+            "subheading": "",
+            "description": "<p>Farm-Fresh and Uniquely Vibrant</p>",
+            "desc_size": "text-desc-lg",
+            "button_text_1": "Shop Now",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        },
+        "slide_QUJWkY": {
+          "type": "slide",
+          "settings": {
+            "background": "shopify://shop_images/raws_ccp-6.jpg",
+            "mb_background": "shopify://shop_images/raws_ccp-6.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "left-middle",
+            "text_alignment": "left",
+            "text_color": "#ff0000",
+            "title": "FRESH ECUADORIAN ROSES",
+            "heading_size": "h-xl",
+            "subheading": "",
+            "description": "<p>Farm-Fresh and Uniquely Vibrant</p>",
+            "desc_size": "text-desc-lg",
+            "button_text_1": "Shop Now",
+            "button_link_1": "",
+            "button_style_1": "btn--primary",
+            "button_size_1": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_style_2": "btn--primary",
+            "button_size_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_76xjkM",
+        "slide_f8kHVy",
+        "slide_DzfWhx",
+        "slide_QUJWkY"
+      ],
+      "custom_css": [
+        "/*slider header*/.f-slideshow__description {color: white; font-size: 24px; margin-top: 10px;}",
+        ".f-slideshow__btn a {opacity: 1 !important; background: #ff2424; border: none; color: white; text-transform: none;}",
+        ".f-slideshow__btn a:before {background: #ff8a8a;}",
+        ".f-slideshow__btn a:after {background: #ff2424;}",
+        "@media (max-width: 419px) {.f-slideshow__content {position: absolute; bottom: 0; } .f-slideshow__btn-group {margin-top: 15px; }}"
+      ],
+      "settings": {
+        "container": "container-full",
+        "slideshow_height": "large",
+        "show_dots": true,
+        "show_nav": true,
+        "autoplay": true,
+        "autorotate_speed": 5,
+        "pagination_background": "none",
+        "controls_position": "center",
+        "pagination_style": "counter",
+        "show_text_below": false,
+        "text_alignment_mobile": "left",
+        "accessibility_info": "Slideshow about our brand",
+        "custom_id": "",
+        "custom_class": "",
+        "enable_bg_zoom_effect": false
+      }
+    },
+    "product_tabs_BdrakR": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_VANyq9": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "the-sun-garden-flowers"
+          }
+        },
+        "tab_cM8BNj": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "spray-roses"
+          }
+        },
+        "tab_ct8apH": {
+          "type": "tab",
+          "settings": {
+            "title": "",
+            "collection": "luxury-roses"
+          }
+        }
+      },
+      "block_order": [
+        "tab_VANyq9",
+        "tab_cM8BNj",
+        "tab_ct8apH"
+      ],
+      "custom_css": [
+        ".section__heading {text-transform: uppercase;}",
+        ".product-card__title {color: #600; text-transform: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "layout": "horizontal",
+        "heading": "TOP PICKS",
+        "heading_size": "h-xl",
+        "description": "",
+        "limit": 3,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "show_nav": false,
+        "show_dots": false,
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "enable_swipe_mobile": true,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_TrUgTi": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_KHFdW4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Join The AFLEUR Atelier Club"
+          }
+        },
+        "heading_tQCznQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Experience the joy of fresh roses all year round",
+            "heading_size": "h-xl"
+          }
+        },
+        "button_wJFUfp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join Now",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KHFdW4",
+        "heading_tQCznQ",
+        "button_wJFUfp"
+      ],
+      "custom_css": [
+        ".image-with-text__content h2 {text-transform: uppercase;}",
+        ".image-with-text__content h3 {text-transform: none; font-size: 20px;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "accent",
+        "image": "shopify://shop_images/raws_ccp-7.jpg",
+        "image_width": "50%",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_68dg6f": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_WT9Gtr": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Our Promises"
+          }
+        },
+        "heading_DFxyaJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Fresh Ecuadorian Roses, Farm-Fresh and Uniquely Vibrant</strong>",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "button_DqcXPL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/our-story",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WT9Gtr",
+        "heading_DFxyaJ",
+        "button_DqcXPL"
+      ],
+      "custom_css": [
+        ".rich-text__subheading {text-transform: none; font-size: 20px; font-weight: 400;}",
+        ".rich-text__heading {text-transform: none; font-weight: 700 !important;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-bc4a096f-47f9-4141-9ef7-6cfa59db2227",
+        "text_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "multicolumn_BqB4cP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dJ9itk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sustainably_grown_on_our_ecuadorian_farms.svg",
+            "image_link": "",
+            "title": "",
+            "heading_size": "h3",
+            "text": "<p>Sustainably grown on our Ecuadorian farms</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_DTxK8N": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/your_flowers_are_cut_fresh.svg",
+            "image_link": "",
+            "title": "",
+            "heading_size": "h3",
+            "text": "<p>Your flowers are cut fresh, just for you.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_x7YdKd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shipped_directly_from_our_farms.svg",
+            "image_link": "",
+            "title": "",
+            "heading_size": "h3",
+            "text": "<p>Shipped directly from our farms.<br/><br/></p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_JehMz4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/enjoy_farm_fresh.svg",
+            "image_link": "",
+            "title": "",
+            "heading_size": "h3",
+            "text": "<p>Enjoy farm-fresh, artisan flowers in days.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        }
+      },
+      "block_order": [
+        "column_dJ9itk",
+        "column_DTxK8N",
+        "column_x7YdKd",
+        "column_JehMz4"
+      ],
+      "custom_css": [
+        ".section__heading {font-size: 60px; line-height: 66px; text-transform: uppercase; color: #ff2424;}",
+        ".section__description {color: #ff2424; font-size: 20px !important; line-height: 28px !important; margin-top: 10px;}",
+        ".color-background-1 {background-image: url(\"https://cdn.shopify.com/s/files/1/0870/3167/7246/files/PurplePattern.webp?v=1740885629\"); padding: 65px 0; background-size: cover;}",
+        ".multicolumn-card {border: 1px solid #ffdbdb; border-radius: 8px; padding: 50px 15px; background: #ffdbdb; height: 100%;}"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_schema": "background-1",
+        "section_header_padding_bottom": "large",
+        "heading": "Our Process",
+        "heading_size": "h-xl",
+        "description": "<p>We are committed to providing an unmatched experience centered around luxury and quality</p>",
+        "layout": "vertical",
+        "text_alignment": "center",
+        "image_width": "medium",
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_swipe_mobile": false,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "d8a17c2d-b43a-460f-b740-f56e8cc11111": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "spray-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "the-sun-garden-flowers",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "luxury-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "weading-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tint-roses",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-1",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-2",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-3",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-4",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-5"
+      ],
+      "custom_css": [
+        ".section__header {justify-content: center;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-6c3cb7bc-c3b2-44a7-8b61-25c7547e8185",
+        "section_header_padding_bottom": "medium",
+        "header_layout": "horizontal",
+        "heading": "SHOP BY CATEGORIES",
+        "heading_size": "h-xl",
+        "description": "",
+        "title_font": "body",
+        "title_size": "text-base",
+        "card_style": "4",
+        "text_alignment": "left",
+        "text_color": "#221f1f",
+        "image_ratio": "adapt",
+        "show_count": false,
+        "inline_count": false,
+        "columns": 5,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "show_all_button_on_top": true,
+        "button_label": "",
+        "button_url": "",
+        "button_style": "btn--underline",
+        "enable_slider": true,
+        "show_dots": false,
+        "show_nav": true,
+        "enable_swipe_mobile": true,
+        "column_mobile": "2",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_Yhnjhj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3VfLjJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT AFLEUR,",
+            "heading_size": "h-xl"
+          }
+        },
+        "subheading_TtJ94X": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "we believe that every bloom tells a story."
+          }
+        },
+        "text_C3NBRh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our exquisite Ecuadorian roses are handpicked at their peak, ensuring that you receive only the most vibrant and luxurious flowers. Experience the AFLEUR difference, where luxury and nature intertwine to create unforgettable floral arrangements that elevate any space.</p>"
+          }
+        },
+        "button_JUF4Py": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "https://afleur.com/collections/all",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3VfLjJ",
+        "subheading_TtJ94X",
+        "text_C3NBRh",
+        "button_JUF4Py"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px;}",
+        ".mega-description {color: #0b0a0a;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/raws_ccp-3.jpg",
+        "image_width": "50%",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection_tabs_KHFKa6": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_89394n": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Screenshot_2025-03-03_194700.png",
+            "heading": "Do you offer free shipping on all orders?",
+            "heading_size": "h3",
+            "text": "<p>Yes, we are pleased to offer free shipping on all orders, ensuring that you can enjoy our products without any additional shipping costs. Please check our website for any specific promotions or conditions that may apply.</p>"
+          }
+        },
+        "collection_mTM76P": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/raws_ccp-4.jpg",
+            "heading": "How can I get assistance if I have questions about my order?",
+            "heading_size": "h3",
+            "text": "<p>Our dedicated online support team is here to help! You can reach out to us via our live chat feature on the website, email us at support@afleur.com, or call our customer service line. We are available to assist you with any inquiries regarding your order or our products.</p>"
+          }
+        },
+        "collection_7dk9QF": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/raws_ccp-4.jpg",
+            "heading": "What should I do if my order arrives damaged or incorrect?",
+            "heading_size": "h3",
+            "text": "<p>We strive to ensure that every order is perfect, but if you receive a damaged or incorrect item, please contact our online support team within 24 hours of delivery. We will work quickly to resolve the issue and ensure your satisfaction, including arranging for a replacement or refund if necessary.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collection_89394n",
+        "collection_mTM76P",
+        "collection_7dk9QF"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "heading": "FAQ",
+        "heading_size": "h-xl",
+        "subheading": "",
+        "description": "",
+        "image_position": "left",
+        "image_ratio": "1/1",
+        "prefix_header": "ordinal_number",
+        "trigger_behavior": "hover",
+        "autoplay": true,
+        "autoplay_duration": 10,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "slideshow_rqwjTJ",
+    "product_tabs_BdrakR",
+    "image_with_text_TrUgTi",
+    "rich_text_68dg6f",
+    "multicolumn_BqB4cP",
+    "d8a17c2d-b43a-460f-b740-f56e8cc11111",
+    "image_with_text_Yhnjhj",
+    "collection_tabs_KHFKa6"
+  ]
+}

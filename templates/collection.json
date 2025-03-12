@@ -1,0 +1,262 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb_WQpiGb": {
+      "type": "breadcrumb",
+      "custom_css": [
+        ".breadcrumbs {color: #f00;}",
+        ".breadcrumbs a {color: #f00;}"
+      ],
+      "settings": {
+        "brc_container": "container",
+        "brc_text_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d8a17c2d-b43a-460f-b740-f56e8cc11111": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "spray-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "the-sun-garden-flowers",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "luxury-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "weading-roses",
+            "title": ""
+          }
+        },
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tint-roses",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-1",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-2",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-3",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-4",
+        "template--17157701533922__d8a17c2d-b43a-460f-b740-f56e8cc11111-featured_collection-5"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-bc4a096f-47f9-4141-9ef7-6cfa59db2227",
+        "section_header_padding_bottom": "small",
+        "header_layout": "vertical",
+        "heading": "ALL PRODUCTS",
+        "heading_size": "h-xl",
+        "description": "",
+        "title_font": "body",
+        "title_size": "text-base",
+        "card_style": "4",
+        "text_alignment": "left",
+        "text_color": "#222222",
+        "image_ratio": "adapt",
+        "show_count": false,
+        "inline_count": false,
+        "columns": 5,
+        "column_gap": "extra-small",
+        "row_gap": "medium",
+        "show_all_button_on_top": true,
+        "button_label": "",
+        "button_url": "",
+        "button_style": "btn--underline",
+        "enable_slider": true,
+        "show_dots": false,
+        "show_nav": true,
+        "enable_swipe_mobile": true,
+        "column_mobile": "2",
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 8,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "4ed3ca22-53a8-4d7d-a4d8-4375e98681f8": {
+          "type": "banner",
+          "settings": {
+            "collection": "the-sun-garden-flowers",
+            "image": "shopify://shop_images/generic_product_2_hover.png"
+          }
+        }
+      },
+      "block_order": [
+        "4ed3ca22-53a8-4d7d-a4d8-4375e98681f8"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-1",
+        "image_height": "adapt",
+        "text_alignment": "center",
+        "show_breadcrumb": false,
+        "show_desc": true,
+        "show_collection_image": false,
+        "image_position": "use_image_as_background",
+        "image_overlay_opacity": 0,
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        "#ProductGridContainer {background: #fffcf4;}",
+        ".collection-product-count {color: #0b0a0a;}",
+        ".list-none {color: #0b0a0a;}",
+        ".f-facets__block-header {color: #0b0a0a;}",
+        ".f-facets-price__to {color: #0b0a0a;}",
+        ".f-price {color: #f00;}",
+        ".product-card__wrapper:hover .product-card__image-wrapper .product-card__image--second,.product-card__wrapper:focus-within .product-card__image-wrapper .product-card__image--second {transition: 1.1s !important;}"
+      ],
+      "settings": {
+        "container": "container",
+        "products_per_page": 50,
+        "columns": 3,
+        "column_gap": "extra-small",
+        "enable_product_count": true,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "sidebar_position": "left",
+        "group_collapsible": true,
+        "default_state_collapsible": "expanded",
+        "open_first_group": false,
+        "filter_group_heading_size": "h5",
+        "show_results_count": true,
+        "filter_color_type": "list",
+        "paginate_type": "infinite",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "multicolumn_tbnJyi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9yebdF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_1.png",
+            "image_link": "",
+            "title": "FREE SHIPPING",
+            "heading_size": "h3",
+            "text": "<p>Exclusive deal on orders $50+</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_yd3Ywn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.png",
+            "image_link": "",
+            "title": "EASY REFUND",
+            "heading_size": "h3",
+            "text": "<p>Within 30 days of purchase</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_fWJqg7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_3.png",
+            "image_link": "",
+            "title": "ONLINE SUPPORT",
+            "heading_size": "h3",
+            "text": "<p>24 hours a day, 7 days a week</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_hqwHeH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_4.png",
+            "image_link": "",
+            "title": "FLEXIBLE PAYMENT",
+            "heading_size": "h3",
+            "text": "<p>Visa, Master, ApplePay, & more</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        }
+      },
+      "block_order": [
+        "column_9yebdF",
+        "column_yd3Ywn",
+        "column_fWJqg7",
+        "column_hqwHeH"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-cd86e7e6-de2f-48b8-a41b-9e9c750ce36e",
+        "section_header_padding_bottom": "medium",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "layout": "vertical",
+        "text_alignment": "center",
+        "image_width": "x-small",
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_swipe_mobile": false,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb_WQpiGb",
+    "d8a17c2d-b43a-460f-b740-f56e8cc11111",
+    "banner",
+    "product-grid",
+    "multicolumn_tbnJyi"
+  ]
+}

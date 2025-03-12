@@ -1,0 +1,444 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16540498779afc678b": {
+      "type": "hero",
+      "blocks": {
+        "6c5b032a-0a6b-4a5e-8fd0-28f11a0b20ab": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "AFLEUR Subscription Service"
+          }
+        },
+        "16540498776329c8d1-0": {
+          "type": "title",
+          "settings": {
+            "title": "JOIN THE AFLEUR FAMILY!",
+            "heading_size": "h-xl"
+          }
+        }
+      },
+      "block_order": [
+        "6c5b032a-0a6b-4a5e-8fd0-28f11a0b20ab",
+        "16540498776329c8d1-0"
+      ],
+      "custom_css": [
+        ".f-hero_subheading {text-transform: none; font-weight: 400; font-size: 20px;}",
+        ".f-hero_heading {color: #ff2424;}"
+      ],
+      "settings": {
+        "container": "container-full",
+        "image": "shopify://shop_images/hero_subscription_club.webp",
+        "image_overlay_opacity": 0,
+        "hero_height": "adapt",
+        "content_in_container": false,
+        "content_position": "center",
+        "text_alignment": "center",
+        "text_color": "#ffffff",
+        "hero_height_mobile": "large",
+        "content_position_mobile": "center",
+        "show_text_below": false,
+        "text_alignment_mobile": "center",
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "16540503155db15864": {
+      "type": "image-with-text",
+      "blocks": {
+        "1654050315a020c10e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT AFLEUR,",
+            "heading_size": "h-xl"
+          }
+        },
+        "1654050315a020c10e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience the beauty of fresh roses delivered right to your door with our exclusive subscription service. Whether you want to brighten your home, surprise a loved one, or elevate your business ambiance, our subscription plans are designed to meet your needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1654050315a020c10e-0",
+        "1654050315a020c10e-1"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px; font-weight: 400;}",
+        ".mega-description {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/subscription_club_1.webp",
+        "image_width": "50%",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_zwzdLM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gpbziD": {
+          "type": "heading",
+          "settings": {
+            "heading": "WHY SUBSCRIBE?",
+            "heading_size": "h-xl"
+          }
+        },
+        "text_Qg8Bc9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenience:</strong></p><p>Enjoy the ease of regular deliveries without the hassle of reordering. Choose your preferred frequency, and we’ll take care of the rest!</p><p><strong>Freshness Guaranteed:</strong></p><p>Our roses are cut to order and shipped directly from our farm partners, ensuring you receive the freshest blooms possible.</p><p><strong>Exclusive Discounts:</strong></p><p>Subscribers receive special pricing and promotions not available to one-time customers, making it more affordable to enjoy luxury roses.</p><p><strong>Customization:</strong></p><p>Tailor your subscription to fit your style! Choose from a variety of colors and arrangements to suit your taste or occasion.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gpbziD",
+        "text_Qg8Bc9"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px; font-weight: 400;}",
+        ".mega-description {color: #0b0a0a;}",
+        ".mega-description p strong {color: #ff2424; font-size: 24px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/subscription_club_2.webp",
+        "image_width": "50%",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_F4BJDd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JEyNCh": {
+          "type": "heading",
+          "settings": {
+            "heading": "HOW IT WORKS:",
+            "heading_size": "h-xl"
+          }
+        },
+        "text_UQH7p4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Choose Your Plan:</strong></p><p>Select from our flexible subscription options—weekly, bi-weekly, or monthly deliveries.</p><p><strong>Customize Your Order:</strong></p><p>Pick your favorite rose varieties and colors. You can change your selection at any time!</p><p><strong>Enjoy Hassle-Free Deliveries:</strong></p><p>Your beautiful roses will be delivered right to your doorstep on your chosen schedule. You’ll receive a notification before each delivery.</p><p><strong>Manage Your Subscription:</strong></p><p>Easily update your delivery frequency, change your address, or pause your subscription through your online account.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JEyNCh",
+        "text_UQH7p4"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px; font-weight: 400;}",
+        ".mega-description {color: #fffcf4;}",
+        ".mega-description p strong {font-size: 24px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "accent",
+        "image": "shopify://shop_images/subscription_club_3.webp",
+        "image_width": "50%",
+        "image_position": "right",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_JUfnVR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_J6PfAm": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUBSCRIPTION PLANS:",
+            "heading_size": "h-xl"
+          }
+        },
+        "text_XHnwJU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Weekly Delivery:</strong></p><p>Perfect for those who love fresh flowers every week.</p><p><strong>Bi-Weekly Delivery:</strong></p><p>Enjoy a beautiful bouquet every other week.</p><p><strong>Monthly Delivery:</strong></p><p>Ideal for those who want to refresh their space with roses once a month.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_J6PfAm",
+        "text_XHnwJU"
+      ],
+      "custom_css": [
+        ".mega-subtitle {text-transform: none; font-size: 20px; margin-top: 0px; font-weight: 400;}",
+        ".mega-description {color: #0b0a0a;}",
+        ".mega-description p strong {color: #ff2424; font-size: 24px;}"
+      ],
+      "settings": {
+        "container": "container-full",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/subscription_club_4.webp",
+        "image_width": "50%",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "16540501175e796680": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_3DkC9L": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sign Up Today!"
+          }
+        },
+        "1654050117f10d5d66-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ready to elevate your floral experience? Sign up for our subscription service today and enjoy complimentary shipping on your first order!</p>"
+          }
+        },
+        "button_Nc3Fer": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "https://afleur.com/collections/all",
+            "button_style": "btn--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3DkC9L",
+        "1654050117f10d5d66-1",
+        "button_Nc3Fer"
+      ],
+      "custom_css": [
+        ".rich-text {background-image: url(\"https://cdn.shopify.com/s/files/1/0870/3167/7246/files/background_our_process.webp?v=1726007041\"); padding: 120px 0;}",
+        ".rich-text__heading {text-transform: none; font-weight: 400; font-size: 20px;}",
+        ".rich-text__subheading {font-weight: 700; font-size: 40px; text-transform: none;}",
+        ".rich-text__text {font-weight: 400; font-size: 24px; color: #ff2424;}",
+        ".btn--primary {opacity: 1 !important; text-transform: none;}"
+      ],
+      "settings": {
+        "container": "container-narrow",
+        "color_schema": "scheme-bc4a096f-47f9-4141-9ef7-6cfa59db2227",
+        "text_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_wMw3Ne": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FcmMGc": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEED HELP?",
+            "heading_size": "h-xl"
+          }
+        },
+        "text_7GMBet": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have any questions about our subscription service or need assistance, our dedicated customer support team is here to help! Contact us at support@AFLEUR.com or call us at [Your Phone Number].<br/><br/>Join the AFLEUR family and let the beauty of fresh roses brighten your life!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FcmMGc",
+        "text_7GMBet"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "image": "shopify://shop_images/subscription_club_5.webp",
+        "image_width": "50%",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "padding_left": 0,
+        "padding_right": 0,
+        "align_content_container": "none",
+        "mobile_padding_left": 15,
+        "mobile_padding_right": 15,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "multicolumn_TCTigm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dfcVw6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_1.png",
+            "image_link": "",
+            "title": "FREE SHIPPING",
+            "heading_size": "h3",
+            "text": "<p>Exclusive deal on orders $50+</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_EPRK9i": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_2.png",
+            "image_link": "",
+            "title": "EASY REFUND",
+            "heading_size": "h3",
+            "text": "<p>Within 30 days of purchase</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_ht7mYC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_3.png",
+            "image_link": "",
+            "title": "ONLINE SUPPORT",
+            "heading_size": "h3",
+            "text": "<p>24 hours a day, 7 days a week</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        },
+        "column_DQUW3t": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/logo_4.png",
+            "image_link": "",
+            "title": "FLEXIBLE PAYMENT",
+            "heading_size": "h3",
+            "text": "<p>Visa, Master, ApplePay, & more</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "btn--underline"
+          }
+        }
+      },
+      "block_order": [
+        "column_dfcVw6",
+        "column_EPRK9i",
+        "column_ht7mYC",
+        "column_DQUW3t"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "scheme-cd86e7e6-de2f-48b8-a41b-9e9c750ce36e",
+        "section_header_padding_bottom": "medium",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "layout": "vertical",
+        "text_alignment": "center",
+        "image_width": "x-small",
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_swipe_mobile": false,
+        "column_mobile": "1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16540498779afc678b",
+    "16540503155db15864",
+    "image_with_text_zwzdLM",
+    "image_with_text_F4BJDd",
+    "image_with_text_JUfnVR",
+    "16540501175e796680",
+    "image_with_text_wMw3Ne",
+    "multicolumn_TCTigm"
+  ]
+}

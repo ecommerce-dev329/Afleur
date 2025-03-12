@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "breadcrumb_iBGXJi": {
+      "type": "breadcrumb",
+      "settings": {
+        "brc_container": "container",
+        "brc_text_alignment": "start",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_QMRgNk": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EVmEND": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "We’re here to help"
+          }
+        },
+        "heading_wdBUmd": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT AFLEUR,",
+            "heading_size": "h-xl",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_FQfCYp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase from us.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EVmEND",
+        "heading_wdBUmd",
+        "text_FQfCYp"
+      ],
+      "custom_css": [
+        ".rich-text__subheading {text-transform: none; font-size: 20px; margin-top: 0px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_4aQcMc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_peDmQT": {
+          "type": "heading",
+          "settings": {
+            "heading": "1. Information We Collect",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_yUztTh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may collect personal information from you in various ways, including when you:<br/>- Place an order<br/>- Create an account<br/>- Subscribe to our newsletter<br/>- Contact us for support or inquiries<br/><br/>The types of personal information we may collect include:<br/>- Name<br/>- Email address<br/>- Phone number<br/>- Shipping address<br/>- Billing information<br/>- Payment information</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_peDmQT",
+        "text_yUztTh"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_V8R7cD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7kixae": {
+          "type": "heading",
+          "settings": {
+            "heading": "2. How We Use Your Information",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_ikbPrz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use the information we collect for various purposes, including:<br/>- Processing and fulfilling your orders<br/>- Communicating with you about your order or inquiries<br/>- Sending you promotional materials and updates (if you have opted in)<br/>- Improving our website and services<br/>- Analyzing usage trends and preferences</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7kixae",
+        "text_ikbPrz"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_UcQjqR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jzyW8E": {
+          "type": "heading",
+          "settings": {
+            "heading": "3. Disclosure of Your Information",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_U8xpmj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We do not sell, trade, or otherwise transfer your personal information to outside parties without your consent, except in the following circumstances:<br/>To trusted third-party service providers who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential.<br/>To comply with legal obligations, enforce our site policies, or protect our rights or the rights of others.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzyW8E",
+        "text_U8xpmj"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_CknNwd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P4TVKF": {
+          "type": "heading",
+          "settings": {
+            "heading": "4. Data Security",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_qxyPJ9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We implement a variety of security measures to maintain the safety of your personal information. Your personal information is stored in secure networks and is only accessible by a limited number of individuals who have special access rights to such systems. We also use encryption technology to protect sensitive information transmitted online.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_P4TVKF",
+        "text_qxyPJ9"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_JPNq3T": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KU894H": {
+          "type": "heading",
+          "settings": {
+            "heading": "5. Your Rights",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_tbTYD6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You have the right to:<br/>Access the personal information we hold about you<br/>Request correction of any inaccurate or incomplete information<br/>Request deletion of your personal information, subject to certain exceptions<br/>Opt-out of receiving promotional communications from us<br/>To exercise any of these rights, please contact us using the information provided below.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KU894H",
+        "text_tbTYD6"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_jdc7qg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wJAG4j": {
+          "type": "heading",
+          "settings": {
+            "heading": "6. Cookies and Tracking Technologies",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_nxtyjC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our website may use cookies and similar tracking technologies to enhance your experience. Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture certain information.<br/>You can choose to have your computer warn you each time a cookie is being sent or to turn off cookies altogether. If you disable cookies, some features of our website may not function properly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wJAG4j",
+        "text_nxtyjC"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_hTyWgV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_N6kQrC": {
+          "type": "heading",
+          "settings": {
+            "heading": "7. Third-Party Links",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_qmm9gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our website may contain links to third-party websites. We do not control these websites and are not responsible for their content or privacy practices. We encourage you to review the privacy policies of any third-party sites you visit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_N6kQrC",
+        "text_qmm9gp"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_HXQjzq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kiz9RW": {
+          "type": "heading",
+          "settings": {
+            "heading": "8. Changes to This Privacy Policy",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_TBNAwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the effective date at the top. We encourage you to review this Privacy Policy periodically for any changes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kiz9RW",
+        "text_TBNAwg"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_HPP9UF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jhQ3dd": {
+          "type": "heading",
+          "settings": {
+            "heading": "9. Contact Us",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_qnPqUQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jhQ3dd",
+        "text_qnPqUQ"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_VyKR8U": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_caDXVH": {
+          "type": "heading",
+          "settings": {
+            "heading": "AFLEUR",
+            "heading_size": "h1",
+            "highlight_style": "none",
+            "enable_highlight_text_color": false
+          }
+        },
+        "text_j3PXie": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Your Address]<br/>[City, State, Zip Code]<br/>Email: info@AFLEUR.com<br/>Phone: [Your Phone Number]</p><p><br/>Thank you for choosing AFLEUR. Your privacy is important to us!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_caDXVH",
+        "text_j3PXie"
+      ],
+      "custom_css": [
+        ".rich-text__heading {color: #0b0a0a;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_schema": "background-2",
+        "text_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 60,
+        "custom_id": "",
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumb_iBGXJi",
+    "rich_text_QMRgNk",
+    "rich_text_4aQcMc",
+    "rich_text_V8R7cD",
+    "rich_text_UcQjqR",
+    "rich_text_CknNwd",
+    "rich_text_JPNq3T",
+    "rich_text_jdc7qg",
+    "rich_text_hTyWgV",
+    "rich_text_HXQjzq",
+    "rich_text_HPP9UF",
+    "rich_text_VyKR8U"
+  ]
+}
