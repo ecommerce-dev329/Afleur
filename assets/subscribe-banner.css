@@ -1,0 +1,83 @@
+.desktop-hidden {
+  display: none;
+}
+.section--subscribe-banner {
+  position: relative;
+}
+.section--subscribe-banner .banner-image-wrapper img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+}
+.section--subscribe-banner .banner-image-wrapper img.mobile-image {
+  height: auto;
+}
+.banner-text-wrapper {
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  color: #000;
+  position: absolute;
+  flex-direction: column;
+}
+.section--subscribe-banner .heading {
+  font-family: Domaine Display Narrow;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.section--subscribe-banner .subheading {
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.section--subscribe-banner .subscribe-item {
+  font-family: Mixta Sharp;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  vertical-align: middle;
+}
+.section--subscribe-banner .banner-button-wrapper a {
+  padding: 10px 20px;
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 10px;
+}
+@media screen and (max-width: 850px) {
+  .banner-text-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    padding-inline: 100px !important;
+  }
+}
+@media screen and (max-width: 748px) {
+  .desktop-hidden {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .banner-text-wrapper {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  .banner-text-wrapper {
+    padding-inline: 10px !important;
+  }
+}

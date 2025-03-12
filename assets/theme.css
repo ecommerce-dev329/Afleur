@@ -12,6 +12,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'Reuben';
+  src: url('https://cdn.shopify.com/s/files/1/0870/3167/7246/files/Reuben.otf?v=1741787559');
+  font-weight: normal;
+  font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6, .product-title {
     font-family: 'Domaine Display Narrow', serif !important;

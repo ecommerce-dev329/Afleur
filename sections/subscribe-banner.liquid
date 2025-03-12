@@ -1,0 +1,356 @@
+{{ 'subscribe-banner.css' | asset_url | stylesheet_tag }}
+{% style %}
+  .banner-text-wrapper {
+    padding-top: {{ section.settings.dsk_pad_top }}px;
+    padding-bottom: {{ section.settings.dsk_pad_bottom }}px;
+    padding-inline: {{ section.settings.dsk_pad_inline }}px;
+  }
+  .banner-text-wrapper-dsk-left_top {
+    left: 0;
+    top: 0;
+  }
+  .banner-text-wrapper-dsk-left_middle {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-text-wrapper-dsk-left_bottom {
+    left: 0;
+    bottom: 0;
+  }
+  .banner-text-wrapper-dsk-center_top {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .banner-text-wrapper-dsk-center_middle {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner-text-wrapper-dsk-center_bottom {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .banner-text-wrapper-dsk-right_top {
+    right: 0;
+    top: 0;
+  }
+  .banner-text-wrapper-dsk-right_middle {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-text-wrapper-dsk-right_bottom {
+    right: 0;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: 560px) {
+    .banner-text-wrapper {
+      padding-top: {{ section.settings.mbl_pad_top }}px !important;
+      padding-bottom: {{ section.settings.mbl_pad_bottom }}px !important;
+      padding-inline: {{ section.settings.mbl_pad_inline }}px !important;
+    }
+    .section--subscribe-banner .heading {
+      font-size: 35px;
+    }
+    .section--subscribe-banner .subscribe-item {
+      font-size: 16px;
+      list-style: none;
+    }
+    .banner-text-wrapper-mbl-left_top {
+      left: 0;
+      top: 0;
+    }
+    .banner-text-wrapper-mbl-left_middle {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .banner-text-wrapper-mbl-left_bottom {
+      left: 0;
+      bottom: 0;
+    }
+    .banner-text-wrapper-mbl-center_top {
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .banner-text-wrapper-mbl-center_middle {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .banner-text-wrapper-mbl-center_bottom {
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .banner-text-wrapper-mbl-right_top {
+      right: 0;
+      top: 0;
+    }
+    .banner-text-wrapper-mbl-right_middle {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .banner-text-wrapper-mbl-right_bottom {
+      right: 0;
+      bottom: 0;
+    }
+  }
+{% endstyle %}
+
+<div class="section--subscribe-banner">
+  <div class="banner-image-wrapper">
+    {%- if section.settings.dsk_banner_image != blank -%}
+      {{ section.settings.dsk_banner_image | image_url: width: auto | image_tag: loading: 'lazy', alt: section.settings.dsk_banner_image, class: "mobile-hidden desktop-image" }}
+    {%- endif -%}
+    {%- if section.settings.mbl_banner_image -%}
+      {{ section.settings.mbl_banner_image | image_url: width: auto | image_tag: loading: 'lazy', alt: section.settings.mbl_banner_image, class: "desktop-hidden mobile-image" }}
+    {%- endif -%}
+  </div>
+  <script>
+    console.log({{ section.settings.dsk_align | json }})
+  </script>
+
+  <div class="banner-text-wrapper banner-text-wrapper-dsk-{{ section.settings.dsk_align }} banner-text-wrapper-mbl-{{ section.settings.mbl_align }}">
+    <div class="heading">{{ section.settings.heading }}</div>
+    <div class="subheading">{{ section.settings.subheading }}</div>
+    <div class="subscribe-text-wrapper">
+      {%- if section.blocks != blank -%}
+        {%- for block in section.blocks -%}
+          <li class="subscribe-item">{{ block.settings.subscribe_text }}</li>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    <div class="banner-button-wrapper">
+      <a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Subscribe Banner",
+    "tag": "section",
+    "class": "section-subscribe-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "dsk_banner_image",
+        "label": "Desktop Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mbl_banner_image",
+        "label": "Mobile Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "SUBSCRIBE & SAVE"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "The Afleur atelier club"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Join Now"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }, {
+        "type": "header",
+        "content": "Content Alignment"
+      }, {
+        "type": "select",
+        "id": "dsk_align",
+        "label": "Desktop Alignment",
+        "options": [
+          {
+            "value": "left_top",
+            "label": "Left Top"
+          },
+          {
+            "value": "left_middle",
+            "label": "Left Middle"
+          },
+          {
+            "value": "left_bottom",
+            "label": "Left Bottom"
+          },
+          {
+            "value": "center_top",
+            "label": "Center Top"
+          }, {
+            "value": "center_middle",
+            "label": "Center Middle"
+          }, {
+            "value": "center_bottom",
+            "label": "Center Bottom"
+          }, {
+            "value": "right_top",
+            "label": "Right Top"
+          }, {
+            "value": "right_center",
+            "label": "Right Center"
+          }, {
+            "value": "right_bottom",
+            "label": "Right Bottom"
+          }
+        ],
+        "default": "left_middle"
+      }, {
+        "type": "select",
+        "id": "mbl_align",
+        "label": "Mobile Alignment",
+        "options": [
+          {
+            "value": "left_top",
+            "label": "Left Top"
+          },
+          {
+            "value": "left_middle",
+            "label": "Left Middle"
+          },
+          {
+            "value": "left_bottom",
+            "label": "Left Bottom"
+          },
+          {
+            "value": "center_top",
+            "label": "Center Top"
+          }, {
+            "value": "center_middle",
+            "label": "Center Middle"
+          }, {
+            "value": "center_bottom",
+            "label": "Center Bottom"
+          }, {
+            "value": "right_top",
+            "label": "Right Top"
+          }, {
+            "value": "right_center",
+            "label": "Right Center"
+          }, {
+            "value": "right_bottom",
+            "label": "Right Bottom"
+          }
+        ],
+        "default": "center_top"
+      }, {
+        "type": "header",
+        "content": "Padding Settings"
+      }, {
+        "type": "range",
+        "id": "dsk_pad_top",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Top",
+        "default": 65
+      }, {
+        "type": "range",
+        "id": "dsk_pad_bottom",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Bottom",
+        "default": 65
+      }, {
+        "type": "range",
+        "id": "dsk_pad_inline",
+        "min": 30,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Inline",
+        "default": 205
+      }, {
+        "type": "range",
+        "id": "mbl_pad_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Top",
+        "default": 40
+      }, {
+        "type": "range",
+        "id": "mbl_pad_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Bottom",
+        "default": 40
+      }, {
+        "type": "range",
+        "id": "mbl_pad_inline",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Inline",
+        "default": 40
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Subscribe Item",
+        "type": "subscribe_item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "subscribe_text",
+            "label": "Text"
+          }, {
+            "type": "checkbox",
+            "id": "dots_visible",
+            "label": "Dots Visible",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Subscribe Banner",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "subscribe_item"
+          },
+          {
+            "type": "subscribe_item"
+          },
+          {
+            "type": "subscribe_item"
+          },
+          {
+            "type": "subscribe_item"
+          }, {
+            "type": "subscribe_item"
+          }, {
+            "type": "subscribe_item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
