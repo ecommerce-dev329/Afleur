@@ -119,6 +119,16 @@
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "add_on_products",
+      "namespace": "custom",
+      "name": "Add-On Products",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [],

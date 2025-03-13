@@ -1,18 +1,50 @@
+{%- style -%}
+  .section--build-subscription {
+    padding-top: {{ section.settings.dsk_pad_top }}px;
+    padding-bottom: {{ section.settings.dsk_pad_bottom }}px;
+  }
+  @media screen and (max-width: 748px) {
+    .section--build-subscription {
+      padding-top: {{ section.settings.mbl_pad_top }}px;
+      padding-bottom: {{ section.settings.mbl_pad_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+{{ 'build-subscription.css' | asset_url | stylesheet_tag }}
+
+<div class="section--build-subscription">
+  <div class="build-subscription-heading">{{ section.settings.heading }}</div>
+  {%- if section.blocks != blank -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == "size" -%}
+        <div class="size-wrapper">
+          <div class="block-title">{{ block.size_title }}</div>
+          {%- if block.sub_product != blank -%}
+            console.log({{ block.sub_product | json }});
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
 {% schema %}
   {
     "name": "Build Subscription",
     "tag": "section",
-    "class": "section--build-subscription",
+    "class": "section-build-subscription",
     "settings": [
       {
         "type": "text",
         "id": "heading",
-        "label": "Heading Text"
+        "label": "Heading Text",
+        "default": "Build Your Subscription"
       },
       {
         "type": "text",
         "id": "add_to_bag_button",
-        "label": "Button Text"
+        "label": "Button Text",
+        "default": "ADD TO BAG - $125"
       },
       {
         "type": "header",
@@ -58,8 +90,8 @@
     ],
     "blocks": [
       {
-        "name": "Size Item",
-        "type": "size_item",
+        "name": "Size",
+        "type": "size",
         "settings": [
           {
             "type": "product",
@@ -207,7 +239,7 @@
         "settings": {},
         "blocks": [
           {
-            "type": "size_item"
+            "type": "size"
           }, {
             "type": "delivery_frequency"
           }, {

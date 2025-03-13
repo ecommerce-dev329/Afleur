@@ -127,11 +127,70 @@
         "mbl_pad_top": 50,
         "mbl_pad_bottom": 50
       }
+    },
+    "build_subscription_XP9ceG": {
+      "type": "build-subscription",
+      "blocks": {
+        "size_YUQENx": {
+          "type": "size",
+          "settings": {
+            "sub_product": "",
+            "size_title": "",
+            "variant_1": "The Miniature (12)",
+            "variant_2": "The Signature (24)",
+            "variant_3": "The Grand (36)",
+            "badge_pos": "variant_1"
+          }
+        },
+        "delivery_frequency_TFJQYp": {
+          "type": "delivery_frequency",
+          "settings": {
+            "frequency_title": "",
+            "weekly_text": "Weekly",
+            "bi_weekly_text": "Bi-Weekly",
+            "monthly_text": "Monthly"
+          }
+        },
+        "payment_plan_HPLack": {
+          "type": "payment_plan",
+          "settings": {
+            "plan_title_1": "Pay-As-You-Go",
+            "plan_type_1": "+ Delivery",
+            "plan_description_1": "Get charged only when each delivery is made—no upfront commitment, just flexible, fresh flowers when you want.",
+            "plan_title_2": "PRE-PAID",
+            "plan_type_2": "One -Time Payment",
+            "plan_description_2": "Pay upfront for multiple deliveries and enjoy worry-free gifting with flowers arriving right on schedule."
+          }
+        },
+        "delivery_date_YgVr7U": {
+          "type": "delivery_date",
+          "settings": {
+            "delivery_title": "",
+            "date_title": "Receive by:",
+            "delivery_date_description": "Your Flowers, Your Schedule: Choose your preferred delivery day and frequency, and we'll stick to it. For example, if your first delivery arrives on a Thursday every two weeks, your next blooms will arrive two Thursdays later. For pay-as-you-go plans, charges are processed seven days before each delivery."
+          }
+        }
+      },
+      "block_order": [
+        "size_YUQENx",
+        "delivery_frequency_TFJQYp",
+        "payment_plan_HPLack",
+        "delivery_date_YgVr7U"
+      ],
+      "settings": {
+        "heading": "Build Your Subscription",
+        "add_to_bag_button": "ADD TO BAG - $125",
+        "dsk_pad_top": 80,
+        "dsk_pad_bottom": 80,
+        "mbl_pad_top": 70,
+        "mbl_pad_bottom": 70
+      }
     }
   },
   "order": [
     "main",
     "subscribe_banner_GQbM64",
-    "subscribe_works_CyamQX"
+    "subscribe_works_CyamQX",
+    "build_subscription_XP9ceG"
   ]
 }
