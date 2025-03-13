@@ -77,10 +77,10 @@
         "mbl_pad_inline": 20
       }
     },
-    "how_it_work_3Y7Dky": {
-      "type": "how-it-work",
+    "subscribe_works_CyamQX": {
+      "type": "subscribe-works",
       "blocks": {
-        "clipart_item_tPPKdc": {
+        "clipart_item_Ltb3XU": {
           "type": "clipart_item",
           "settings": {
             "clipart_image": "shopify://shop_images/c643463056ea79eee9e697e713aca9d0.png",
@@ -88,7 +88,7 @@
             "clipart_description": "Flowers are cut fresh when you order, and delivered directly to your doorstep in days."
           }
         },
-        "clipart_item_7wJkbc": {
+        "clipart_item_PgXGrq": {
           "type": "clipart_item",
           "settings": {
             "clipart_image": "shopify://shop_images/16a1339fe8159eabe96cd2e5ff690a02.png",
@@ -96,7 +96,7 @@
             "clipart_description": "Enjoy 30% off and complimentary delivery on all orders."
           }
         },
-        "clipart_item_f7iGVr": {
+        "clipart_item_CX9FGy": {
           "type": "clipart_item",
           "settings": {
             "clipart_image": "shopify://shop_images/67abbc7b3bdfe8ff34c0da9ab68cbac5.png",
@@ -104,7 +104,7 @@
             "clipart_description": "Enjoy 30% off and complimentary delivery on all orders."
           }
         },
-        "clipart_item_4mmbR9": {
+        "clipart_item_dACrhg": {
           "type": "clipart_item",
           "settings": {
             "clipart_image": "shopify://shop_images/15a18583ae87908173bae01e6107ad66.png",
@@ -114,10 +114,10 @@
         }
       },
       "block_order": [
-        "clipart_item_tPPKdc",
-        "clipart_item_7wJkbc",
-        "clipart_item_f7iGVr",
-        "clipart_item_4mmbR9"
+        "clipart_item_Ltb3XU",
+        "clipart_item_PgXGrq",
+        "clipart_item_CX9FGy",
+        "clipart_item_dACrhg"
       ],
       "settings": {
         "heading": "How it works",
@@ -132,6 +132,6 @@
   "order": [
     "main",
     "subscribe_banner_GQbM64",
-    "how_it_work_3Y7Dky"
+    "subscribe_works_CyamQX"
   ]
 }

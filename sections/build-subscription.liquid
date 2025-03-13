@@ -1,0 +1,222 @@
+{% schema %}
+  {
+    "name": "Build Subscription",
+    "tag": "section",
+    "class": "section--build-subscription",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading Text"
+      },
+      {
+        "type": "text",
+        "id": "add_to_bag_button",
+        "label": "Button Text"
+      },
+      {
+        "type": "header",
+        "content": "Padding Settings"
+      },
+      {
+        "type": "range",
+        "id": "dsk_pad_top",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Top",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "dsk_pad_bottom",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Bottom",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "mbl_pad_top",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Top",
+        "default": 70
+      }, {
+        "type": "range",
+        "id": "mbl_pad_bottom",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Bottom",
+        "default": 70
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Size Item",
+        "type": "size_item",
+        "settings": [
+          {
+            "type": "product",
+            "id": "sub_product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "size_title",
+            "label": "Title"
+          },
+          {
+            "type": "header",
+            "content": "Variant Title"
+          },
+          {
+            "type": "text",
+            "id": "variant_1",
+            "label": "Variant 1",
+            "default": "The Miniature (12)"
+          }, {
+            "type": "text",
+            "id": "variant_2",
+            "label": "Variant 2",
+            "default": "The Signature (24)"
+          }, {
+            "type": "text",
+            "id": "variant_3",
+            "label": "Variant 3",
+            "default": "The Grand (36)"
+          }, {
+            "type": "select",
+            "id": "badge_pos",
+            "label": "Badge Position",
+            "options": [
+              {
+                "value": "variant_1",
+                "label": "Variant 1"
+              }, {
+                "value": "variant_2",
+                "label": "Variant 2"
+              }, {
+                "value": "variant_3",
+                "label": "Variant 3"
+              }
+            ],
+            "default": "variant_1"
+          }
+        ]
+      }, {
+        "name": "Delivery Frequency",
+        "type": "delivery_frequency",
+        "settings": [
+          {
+            "type": "text",
+            "id": "frequency_title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "weekly_text",
+            "label": "Weekly Text",
+            "default": "Weekly"
+          }, {
+            "type": "text",
+            "id": "bi_weekly_text",
+            "label": "Bi Weekly Text",
+            "default": "Bi-Weekly"
+          }, {
+            "type": "text",
+            "id": "monthly_text",
+            "label": "Monthly Text",
+            "default": "Monthly"
+          }
+        ]
+      }, {
+        "name": "Payment Plan",
+        "type": "payment_plan",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Plan 1"
+          },
+          {
+            "type": "text",
+            "id": "plan_title_1",
+            "label": "Title",
+            "default": "Pay-As-You-Go"
+          },
+          {
+            "type": "text",
+            "id": "plan_type_1",
+            "label": "Type",
+            "default": "+ Delivery"
+          },
+          {
+            "type": "textarea",
+            "id": "plan_description_1",
+            "label": "Description",
+            "default": "Get charged only when each delivery is made—no upfront commitment, just flexible, fresh flowers when you want."
+          }, {
+            "type": "header",
+            "content": "Plan 2"
+          }, {
+            "type": "text",
+            "id": "plan_title_2",
+            "label": "Title",
+            "default": "PRE-PAID"
+          }, {
+            "type": "text",
+            "id": "plan_type_2",
+            "label": "Type",
+            "default": "One -Time Payment"
+          }, {
+            "type": "textarea",
+            "id": "plan_description_2",
+            "label": "Description",
+            "default": "Pay upfront for multiple deliveries and enjoy worry-free gifting with flowers arriving right on schedule."
+          }
+        ]
+      }, {
+        "name": "Delivery Date",
+        "type": "delivery_date",
+        "settings": [
+          {
+            "type": "text",
+            "id": "delivery_title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "date_title",
+            "label": "Date Title",
+            "default": "Receive by:"
+          }, {
+            "type": "textarea",
+            "id": "delivery_date_description",
+            "label": "Delivery Date Description",
+            "default": "Your Flowers, Your Schedule: Choose your preferred delivery day and frequency, and we'll stick to it. For example, if your first delivery arrives on a Thursday every two weeks, your next blooms will arrive two Thursdays later. For pay-as-you-go plans, charges are processed seven days before each delivery."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Build Subscription",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "size_item"
+          }, {
+            "type": "delivery_frequency"
+          }, {
+            "type": "payment_plan"
+          }, {
+            "type": "delivery_date"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
