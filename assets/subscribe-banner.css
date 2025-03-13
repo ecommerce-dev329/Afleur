@@ -57,6 +57,7 @@
   color: #fff;
   border-radius: 10px;
 }
+
 @media screen and (max-width: 850px) {
   .banner-text-wrapper {
     padding-top: 40px !important;
@@ -79,5 +80,8 @@
 @media screen and (max-width: 560px) {
   .banner-text-wrapper {
     padding-inline: 10px !important;
+  }
+  .section--narrow-width {
+    padding-inline: 20px;
   }
 }

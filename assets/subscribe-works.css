@@ -1,9 +1,3 @@
-.section--subscribe-works {
-  max-width: 1120px;
-  width: 100%;
-  margin: auto;
-  padding-inline: 70px;
-}
 .section--subscribe-works .clipart-item-wrapper {
   gap: 30px;
   display: grid;
@@ -17,12 +11,13 @@
   flex-wrap: wrap;
 }
 .section--subscribe-works .clipart-item {
+  gap: 10px;
   width: 200px;
   display: flex;
-  gap: 10px;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section--subscribe-works .clipart-item-wrapper-grid_3 .clipart-item {
   margin: inherit;
@@ -87,9 +82,6 @@
 }
 
 @media screen and (max-width: 570px) {
-  .section--subscribe-works {
-    padding-inline: 20px;
-  }
   .section--subscribe-works .heading {
     font-weight: 400;
     font-size: 22px;
