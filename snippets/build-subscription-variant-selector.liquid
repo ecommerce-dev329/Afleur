@@ -1,0 +1,27 @@
+{% assign vrn_block = section.blocks | where: "type", "variant_block" %}
+
+<div class="block-wrapper variant-size">
+  <div class="block-title">1. {{ block.settings.block_title }}</div>
+  <div class="block-content-wrapper">
+    {% if sub_product.variants != blank %}
+      <div>
+        {% for vrn in sub_product.variants %}
+          {% for vrn_block_item in vrn_block %}
+            {% if forloop.index == forloop.parentloop.index %}
+              <div class="block-content-item variant-item">
+                {{ vrn_block_item.settings.variant_image | image_url: width: auto | image_tag: loading: "lazy", alt: vrn_block_item.variant_image }}
+                <div class="variant-title">
+                  {% if vrn_block_item.settings.variant_title == blank %}
+                    {{ vrn.title }}
+                  {% else %}
+                    {{ vrn_block_item.settings.variant_title }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

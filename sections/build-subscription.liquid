@@ -20,100 +20,19 @@
     {%- for block in section.blocks -%}
       {% case block.type %}
         {% when "size" %}
-          {% assign vrn_block = section.blocks | where: "type", "variant_block" %}
-          <div class="block-wrapper variant-size">
-            <div class="block-title">1. {{ block.settings.block_title }}</div>
-            <div class="block-content-wrapper">
-              {% if sub_product.variants != blank %}
-                <div>
-                  {% for vrn in sub_product.variants %}
-                    {% for vrn_block_item in vrn_block %}
-                      {% if forloop.index == forloop.parentloop.index %}
-                        <div class="block-content-item variant-item">
-                          {{ vrn_block_item.settings.variant_image | image_url: width: auto | image_tag: loading: "lazy", alt: vrn_block_item.variant_image }}
-                          <div class="variant-title">
-                            {% if vrn_block_item.settings.variant_title == blank %}
-                              {{ vrn.title }}
-                            {% else %}
-                              {{ vrn_block_item.settings.variant_title }}
-                            {% endif %}
-                          </div>
-                        </div>
-                      {% endif %}
-                    {% endfor %}
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
+          {% render 'build-subscription-variant-selector'
+            , section: section
+            , sub_product: sub_product
+            , block: block %}
         {% when "delivery_frequency" %}
-          <div class="block-wrapper delivery-frequency">
-            <div class="block-title">2. {{ block.settings.block_title }}</div>
-            <div class="block-content-wrapper block-content-wrapper-grid_3">
-              <div class="block-content-item delivery-freq-item ">{{ block.settings.weekly_text }}</div>
-              <div class="block-content-item delivery-freq-item ">{{ block.settings.bi_weekly_text }}</div>
-              <div class="block-content-item delivery-freq-item ">{{ block.settings.monthly_text }}</div>
-            </div>
-          </div>
+          {% render 'build-subscription-delivery-frequency'
+            , block: block %}
         {% when "payment_plan" %}
-          <div class="block-wrapper payment-plan">
-            <div class="block-title">3. {{ block.settings.block_title }}</div>
-            <div class="block-content-wrapper block-content-wrapper-grid_2">
-              <div class="block-content-item payment-plan-item">
-                <div class="payment-plan-title-wrapper">
-                  <div class="payment-plan-title-item">
-                    {{ block.settings.plan_title_1 }}
-                  </div>
-                  <div class="payment-plan-title-item">
-                    {{ block.settings.plan_type_1 }}
-                  </div>
-                </div>
-                <div class="payment-plan-description-wrapper">
-                  <div class="payment-plan-description-text">
-                    {{ block.settings.plan_description_1 }}
-                  </div>
-                </div>
-              </div>
-              <div class="block-content-item payment-plan-item">
-                <div class="payment-plan-title-wrapper">
-                  <div class="payment-plan-title-item">
-                    {{ block.settings.plan_title_2 }}
-                  </div>
-                  <div class="payment-plan-title-item">
-                    {{ block.settings.plan_type_2 }}
-                  </div>
-                </div>
-                <div class="payment-plan-description-wrapper">
-                  <div class="payment-plan-description-text">
-                    {{ block.settings.plan_description_2 }}
-                  </div>
-                  <div class="payment-plan-description-pre-paid">
-                    <input
-                      type="text"
-                      value="3"
-                      class="pre-paid-input"
-                      readonly />
-                    <span class="pre-paid-increase-icon pre-paid-plus">+</span>
-                    <span class="pre-paid-increase-icon pre-paid-minus">-</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% render 'build-subscription-payment-plan'
+            , block: block %}
         {% when "delivery_date" %}
-          <div class="block-wrapper delivery-date">
-            <div class="block-title">4. {{ block.settings.block_title }}</div>
-            <div class="block-content-wrapper block-content-wrapper-grid_2">
-              <div class="block-content-item delivery-date-item">
-                <div class="delivery-date-title">{{ block.settings.date_title }}</div>
-                <div class="deliver-date-picker-wrapper">
-                  <input type="text" value="04/12/2025">
-                  <div class="deliver-calendar-wrapper"></div>
-                </div>
-              </div>
-              <div class="block-content-item delivery-date-description">{{ block.settings.delivery_date_description }}</div>
-            </div>
-          </div>
+          {% render 'build-subscription-delivery-date'
+            , block: block %}
       {% endcase %}
     {%- endfor -%}
   {%- endif -%}

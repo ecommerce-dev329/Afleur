@@ -1,0 +1,44 @@
+<div class="block-wrapper payment-plan">
+  <div class="block-title">3. {{ block.settings.block_title }}</div>
+  <div class="block-content-wrapper block-content-wrapper-grid_2">
+    <div class="block-content-item payment-plan-item">
+      <div class="payment-plan-title-wrapper">
+        <div class="payment-plan-title-item">
+          {{ block.settings.plan_title_1 }}
+        </div>
+        <div class="payment-plan-title-item">
+          {{ block.settings.plan_type_1 }}
+        </div>
+      </div>
+      <div class="payment-plan-description-wrapper">
+        <div class="payment-plan-description-text">
+          {{ block.settings.plan_description_1 }}
+        </div>
+      </div>
+    </div>
+    <div class="block-content-item payment-plan-item">
+      <div class="payment-plan-title-wrapper">
+        <div class="payment-plan-title-item">
+          {{ block.settings.plan_title_2 }}
+        </div>
+        <div class="payment-plan-title-item">
+          {{ block.settings.plan_type_2 }}
+        </div>
+      </div>
+      <div class="payment-plan-description-wrapper">
+        <div class="payment-plan-description-text">
+          {{ block.settings.plan_description_2 }}
+        </div>
+        <div class="payment-plan-description-pre-paid">
+          <input
+            type="text"
+            value="3"
+            class="pre-paid-input"
+            readonly />
+          <span class="pre-paid-increase-icon pre-paid-plus">+</span>
+          <span class="pre-paid-increase-icon pre-paid-minus">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
