@@ -122,8 +122,8 @@
       "settings": {
         "heading": "How it works",
         "dsk_grid": "grid_4",
-        "dsk_pad_top": 80,
-        "dsk_pad_bottom": 80,
+        "dsk_pad_top": 70,
+        "dsk_pad_bottom": 40,
         "mbl_pad_top": 35,
         "mbl_pad_bottom": 35
       }
@@ -142,7 +142,7 @@
           "type": "variant_block",
           "settings": {
             "variant_image": "shopify://shop_images/4ef37c23c0ff90f9fdd7dec004b325a5.jpg",
-            "variant_title": "TheMiniature (12)"
+            "variant_title": "The Miniature (12)"
           }
         },
         "variant_block_WibVfh": {
@@ -156,7 +156,7 @@
           "type": "variant_block",
           "settings": {
             "variant_image": "shopify://shop_images/4ef37c23c0ff90f9fdd7dec004b325a5.jpg",
-            "variant_title": "TheGrand (36)"
+            "variant_title": "The Grand (36)"
           }
         },
         "delivery_frequency_TFJQYp": {
@@ -202,8 +202,8 @@
         "sub_product": "reve-pastel",
         "heading": "Build Your Subscription",
         "add_to_bag_button": "ADD TO BAG - $125",
-        "dsk_pad_top": 80,
-        "dsk_pad_bottom": 80,
+        "dsk_pad_top": 40,
+        "dsk_pad_bottom": 40,
         "mbl_pad_top": 35,
         "mbl_pad_bottom": 35
       }
@@ -216,7 +216,8 @@
           "settings": {
             "icon": "shopify://shop_images/Group.png",
             "title": "Contact us",
-            "description": "<p>Chat with our Team: </p><p>Contact@AFLEUR.com</p>"
+            "description": "<p>Chat with our Team: </p><p>Contact@AFLEUR.com</p>",
+            "item_link": ""
           }
         },
         "help_item_tz9y3r": {
@@ -224,7 +225,8 @@
           "settings": {
             "icon": "shopify://shop_images/Group_18.png",
             "title": "FAQs",
-            "description": "<p>Visit our full list of </p><p>common questions.</p>"
+            "description": "<p>Visit our full list of </p><p>common questions.</p>",
+            "item_link": ""
           }
         }
       },
@@ -234,8 +236,8 @@
       ],
       "settings": {
         "heading": "Need help?",
-        "dsk_pad_top": 35,
-        "dsk_pad_bottom": 35,
+        "dsk_pad_top": 40,
+        "dsk_pad_bottom": 25,
         "mbl_pad_top": 35,
         "mbl_pad_bottom": 35
       }

@@ -1,8 +1,16 @@
 {{ 'help-way.css' | asset_url | stylesheet_tag }}
 
-<div class="section--help-way narrow-width">
+{%- style -%}
+  .section--help-way {
+    padding-top: {{ section.settings.dsk_pad_top }}px;
+    padding-bottom: {{ section.settings.dsk_pad_bottom }}px;
+  }
+{%- endstyle -%}
+
+<div class="section--help-way section--narrow-width">
   <div class="heading">{{ section.settings.heading }}</div>
-  <div class="help-way-item-wrapper">
+
+  <div class="help-way-item-wrapper section--help-way-block-grid_{{ section.blocks.size }}">
     {% if section.blocks != blank %}
       {% for block in section.blocks %}
         <a href="{{ block.item_link }}" class="help-way-item">
@@ -26,6 +34,7 @@
       {% endfor %}
     {% endif %}
   </div>
+
 </div>
 
 
@@ -102,12 +111,11 @@
             "type": "richtext",
             "id": "description",
             "label": "Description"
-          },
-          {
+          }, {
             "type": "url",
             "id": "item_link",
             "label": "Item Link"
-          },
+          }
         ]
       }
     ],

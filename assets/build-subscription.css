@@ -214,17 +214,29 @@
   }
 }
 
+@media screen and (max-width: 748px) {
+  .section--build-subscription .variant-size .block-content-wrapper > div {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+  }
+  .section--build-subscription .variant-item {
+    width: 100%;
+    display: grid;
+    max-width: 100%;
+    align-items: center;
+    aspect-ratio: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section--build-subscription .variant-item img {
+    border-radius: 10px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .section--build-subscription .delivery-frequency .block-content-wrapper {
     display: flex;
     row-gap: 15px;
     flex-direction: column;
-  }
-  .section--build-subscription .variant-size .block-content-wrapper {
-    overflow: auto;
-    padding-bottom: 10px;
-  }
-  .section--build-subscription .variant-item {
-    width: 320px;
   }
 }
