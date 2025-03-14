@@ -1,1 +1,96 @@
 /*CSS Custom*/
+
+.rmdp-container.uiDeliveryCalendar.oddCalanderOffset.custom-container>:last-child {
+    top: calc(100% + 5px) !important;
+    left: 0px !important;
+    transform: unset !important;
+}
+
+.identixweb-order-delivery-datepicer-icon, .identixweb-order-delivery-Time, .note_div {
+    max-width: 100% !important;
+}
+
+.identixweb-order-delivery .uiDeliveryCalendar {
+    transform: translateZ(0px);
+}
+
+.identixweb-order-delivery-datepicer-icon, .identixweb-order-delivery-Time, .note_div {
+    max-width: 100% !important;
+}
+
+.iw-calendar {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.identixweb-order-delivery.identixweb-product-order-delivery {
+    z-index: 1;
+    padding-top: 0px !important;
+}
+
+.f-product-form .rmdp-container.uiDeliveryCalendar.oddCalanderOffset.custom-container>:last-child {
+    position: static !important;
+    margin-top: 10px;
+}
+
+.odd-product-calendar .identixweb-order-delivery-datepicer-icon .input-group-btn .order-calendar-button-click, .odd-product-calendar .order-clock-button-click, .ant-select-arrow {
+    background-color: inherit !important;
+    border: none;
+}
+
+.odd_calender_heading {
+    text-transform: uppercase;
+    color: red;
+}
+
+.identixweb-order-delivery-datepicer-icon .identixweb-order-delivery-datepicer-icon {
+    border: 1px solid red;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+.identixweb-order-delivery-datepicer-icon .odd-input-group .uiDeliveryCalendar {
+    background-color: inherit !important;
+}
+
+.iw-calendar svg.calendar-svg path {
+    stroke: red !important;
+    fill: red !important;
+}
+.identixweb-order-delivery-datepicer-icon .odd-input-group .uiDeliveryCalendar {
+    border: none !important;
+}
+
+.identixweb-order-delivery-datepicer-icon .odd-input-group .uiDeliveryCalendar {
+    font-weight: 400;
+    padding-left: 10px !important;
+    font-size: 20px !important;
+}
+.gcw-txt--variant {
+    background: red;
+    color: white;
+    font-size: 1.8rem;
+}
+.gcw-txt--variant-name, .gcw-txt--variant-price {
+    font-size: inherit !important;
+}
+.gcw-txt--variant-price {
+    display: none;
+}
+.select-option .gcw--content-variant-swatches-with-price {
+    border: none;
+}
+.select-option:has(input:checked) .gcw--content-variant-swatches-with-price {
+    outline: 1px solid red;
+    outline-offset: 3px;
+}
+.globo-swatch-product-detail .swatch--gl ul.value.g-variant-color-detail {
+    margin-left: 10px;
+}
+
+.uiHeading.odd_calender_heading {
+    margin-top: 0px !important;
+}
+.rmdp-header {
+    height: auto !important;
+}

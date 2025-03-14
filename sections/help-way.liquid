@@ -1,0 +1,128 @@
+{{ 'help-way.css' | asset_url | stylesheet_tag }}
+
+<div class="section--help-way narrow-width">
+  <div class="heading">{{ section.settings.heading }}</div>
+  <div class="help-way-item-wrapper">
+    {% if section.blocks != blank %}
+      {% for block in section.blocks %}
+        <a href="{{ block.item_link }}" class="help-way-item">
+          <div class="icon-wrapper">
+            {% if block.settings.icon != blank %}
+              {{ block.settings.icon | image_url: width: auto | image_tag: loading: 'lazy' }}
+            {% endif %}
+          </div>
+          <div class="text-wrapper">
+            <div class="item-title">
+              {{ block.settings.title }}
+            </div>
+            <div class="item-description">
+              {{ block.settings.description }}
+            </div>
+          </div>
+          <div class="arrow-icon-wrapper">
+            {% render 'icon-vector' %}
+          </div>
+        </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Help way",
+    "tag": "section",
+    "class": "section--help-way",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Need help?"
+      },
+      {
+        "type": "header",
+        "content": "Padding Settings"
+      },
+      {
+        "type": "range",
+        "id": "dsk_pad_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Top",
+        "default": 35
+      },
+      {
+        "type": "range",
+        "id": "dsk_pad_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Desktop Padding Bottom",
+        "default": 35
+      }, {
+        "type": "range",
+        "id": "mbl_pad_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Top",
+        "default": 35
+      }, {
+        "type": "range",
+        "id": "mbl_pad_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Mobile Padding Bottom",
+        "default": 35
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Help Item",
+        "type": "help_item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Contact us"
+          }, {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "url",
+            "id": "item_link",
+            "label": "Item Link"
+          },
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Help way",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "help_item"
+          }, {
+            "type": "help_item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

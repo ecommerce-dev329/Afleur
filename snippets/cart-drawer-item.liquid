@@ -12,13 +12,13 @@
         <responsive-image class="f-image" style="--aspect-ratio: {{ item.image.aspect_ratio | default: '1' }}">
           <img
             srcset="
-              {% if item.image.width >= 110 %}{{ item.image | image_url: width: 110 }} 1x,{% endif %}
-              {% if item.image.width >= 220 %}{{ item.image | image_url: width: 220 }} 2x{% endif %}
+              {% if item.product.featured_image.width >= 110 %}{{ item.product.featured_image | image_url: width: 110 }} 1x,{% endif %}
+              {% if item.product.featured_image.width >= 220 %}{{ item.product.featured_image | image_url: width: 220 }} 2x{% endif %}
             "
-            width="{{ item.image.width }}"
-            height="{{ item.image.height }}"
+            width="{{ item.product.featured_image.width }}"
+            height="{{ item.product.featured_image.height }}"
             src="{{ item | image_url: width: 220 }}"
-            alt="{{ item.image.alt | escape }}"
+            alt="{{ item.product.featured_image.alt | escape }}"
             loading="lazy"
           >
         </responsive-image>

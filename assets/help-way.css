@@ -1,0 +1,39 @@
+.section--help-way * {
+  color: #171717;
+}
+.section--help-way .heading {
+  text-align: center;
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 26.4px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.help-way-item-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.help-way-item {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.section--help-way .item-title {
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.item-description * {
+  margin: 0;
+  font-family: Mixta Sharp;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}

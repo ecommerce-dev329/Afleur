@@ -12,21 +12,117 @@
 {%- endstyle -%}
 {{ 'build-subscription.css' | asset_url | stylesheet_tag }}
 
-<div class="section--build-subscription">
+{% assign sub_product = section.settings.sub_product %}
+
+<div class="section--build-subscription section--narrow-width">
   <div class="build-subscription-heading">{{ section.settings.heading }}</div>
   {%- if section.blocks != blank -%}
     {%- for block in section.blocks -%}
-      {%- if block.type == "size" -%}
-        <div class="size-wrapper">
-          <div class="block-title">{{ block.size_title }}</div>
-          {%- if block.sub_product != blank -%}
-            console.log({{ block.sub_product | json }});
-          {%- endif -%}
-        </div>
-      {%- endif -%}
+      {% case block.type %}
+        {% when "size" %}
+          {% assign vrn_block = section.blocks | where: "type", "variant_block" %}
+          <div class="block-wrapper variant-size">
+            <div class="block-title">1. {{ block.settings.block_title }}</div>
+            <div class="block-content-wrapper">
+              {% if sub_product.variants != blank %}
+                <div>
+                  {% for vrn in sub_product.variants %}
+                    {% for vrn_block_item in vrn_block %}
+                      {% if forloop.index == forloop.parentloop.index %}
+                        <div class="block-content-item variant-item">
+                          {{ vrn_block_item.settings.variant_image | image_url: width: auto | image_tag: loading: "lazy", alt: vrn_block_item.variant_image }}
+                          <div class="variant-title">
+                            {% if vrn_block_item.settings.variant_title == blank %}
+                              {{ vrn.title }}
+                            {% else %}
+                              {{ vrn_block_item.settings.variant_title }}
+                            {% endif %}
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% when "delivery_frequency" %}
+          <div class="block-wrapper delivery-frequency">
+            <div class="block-title">2. {{ block.settings.block_title }}</div>
+            <div class="block-content-wrapper block-content-wrapper-grid_3">
+              <div class="block-content-item delivery-freq-item ">{{ block.settings.weekly_text }}</div>
+              <div class="block-content-item delivery-freq-item ">{{ block.settings.bi_weekly_text }}</div>
+              <div class="block-content-item delivery-freq-item ">{{ block.settings.monthly_text }}</div>
+            </div>
+          </div>
+        {% when "payment_plan" %}
+          <div class="block-wrapper payment-plan">
+            <div class="block-title">3. {{ block.settings.block_title }}</div>
+            <div class="block-content-wrapper block-content-wrapper-grid_2">
+              <div class="block-content-item payment-plan-item">
+                <div class="payment-plan-title-wrapper">
+                  <div class="payment-plan-title-item">
+                    {{ block.settings.plan_title_1 }}
+                  </div>
+                  <div class="payment-plan-title-item">
+                    {{ block.settings.plan_type_1 }}
+                  </div>
+                </div>
+                <div class="payment-plan-description-wrapper">
+                  <div class="payment-plan-description-text">
+                    {{ block.settings.plan_description_1 }}
+                  </div>
+                </div>
+              </div>
+              <div class="block-content-item payment-plan-item">
+                <div class="payment-plan-title-wrapper">
+                  <div class="payment-plan-title-item">
+                    {{ block.settings.plan_title_2 }}
+                  </div>
+                  <div class="payment-plan-title-item">
+                    {{ block.settings.plan_type_2 }}
+                  </div>
+                </div>
+                <div class="payment-plan-description-wrapper">
+                  <div class="payment-plan-description-text">
+                    {{ block.settings.plan_description_2 }}
+                  </div>
+                  <div class="payment-plan-description-pre-paid">
+                    <input
+                      type="text"
+                      value="3"
+                      class="pre-paid-input"
+                      readonly />
+                    <span class="pre-paid-increase-icon pre-paid-plus">+</span>
+                    <span class="pre-paid-increase-icon pre-paid-minus">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% when "delivery_date" %}
+          <div class="block-wrapper delivery-date">
+            <div class="block-title">4. {{ block.settings.block_title }}</div>
+            <div class="block-content-wrapper block-content-wrapper-grid_2">
+              <div class="block-content-item delivery-date-item">
+                <div class="delivery-date-title">{{ block.settings.date_title }}</div>
+                <div class="deliver-date-picker-wrapper">
+                  <input type="text" value="04/12/2025">
+                  <div class="deliver-calendar-wrapper"></div>
+                </div>
+              </div>
+              <div class="block-content-item delivery-date-description">{{ block.settings.delivery_date_description }}</div>
+            </div>
+          </div>
+      {% endcase %}
     {%- endfor -%}
   {%- endif -%}
+  {% if section.settings.add_to_bag_button %}
+    <button class="add-to-bag f-product-form__submit btn btn--primary">{{ section.settings.add_to_bag_button }}</button>
+  {% endif %}
 </div>
+
+<script src="{{ 'build-subscription.js' |  asset_url }}" defer></script>
 
 {% schema %}
   {
@@ -34,6 +130,11 @@
     "tag": "section",
     "class": "section-build-subscription",
     "settings": [
+      {
+        "type": "product",
+        "id": "sub_product",
+        "label": "Product"
+      },
       {
         "type": "text",
         "id": "heading",
@@ -49,8 +150,7 @@
       {
         "type": "header",
         "content": "Padding Settings"
-      },
-      {
+      }, {
         "type": "range",
         "id": "dsk_pad_top",
         "min": 30,
@@ -94,61 +194,41 @@
         "type": "size",
         "settings": [
           {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title",
+            "default": "Select Size:"
+          }, {
             "type": "product",
             "id": "sub_product",
             "label": "Product"
-          },
-          {
-            "type": "text",
-            "id": "size_title",
-            "label": "Title"
-          },
-          {
-            "type": "header",
-            "content": "Variant Title"
-          },
-          {
-            "type": "text",
-            "id": "variant_1",
-            "label": "Variant 1",
-            "default": "The Miniature (12)"
-          }, {
-            "type": "text",
-            "id": "variant_2",
-            "label": "Variant 2",
-            "default": "The Signature (24)"
-          }, {
-            "type": "text",
-            "id": "variant_3",
-            "label": "Variant 3",
-            "default": "The Grand (36)"
-          }, {
-            "type": "select",
-            "id": "badge_pos",
-            "label": "Badge Position",
-            "options": [
-              {
-                "value": "variant_1",
-                "label": "Variant 1"
-              }, {
-                "value": "variant_2",
-                "label": "Variant 2"
-              }, {
-                "value": "variant_3",
-                "label": "Variant 3"
-              }
-            ],
-            "default": "variant_1"
           }
         ]
-      }, {
+      },
+      {
+        "name": "Variant Block",
+        "type": "variant_block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "variant_image",
+            "label": "Variant Image"
+          }, {
+            "type": "text",
+            "id": "variant_title",
+            "label": "TItle"
+          }
+        ]
+      },
+      {
         "name": "Delivery Frequency",
         "type": "delivery_frequency",
         "settings": [
           {
             "type": "text",
-            "id": "frequency_title",
-            "label": "Title"
+            "id": "block_title",
+            "label": "Title",
+            "default": "Delivery Frequency:"
           }, {
             "type": "text",
             "id": "weekly_text",
@@ -166,10 +246,17 @@
             "default": "Monthly"
           }
         ]
-      }, {
+      },
+      {
         "name": "Payment Plan",
         "type": "payment_plan",
         "settings": [
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title",
+            "default": "Select your plan:"
+          },
           {
             "type": "header",
             "content": "Plan 1"
@@ -185,8 +272,7 @@
             "id": "plan_type_1",
             "label": "Type",
             "default": "+ Delivery"
-          },
-          {
+          }, {
             "type": "textarea",
             "id": "plan_description_1",
             "label": "Description",
@@ -217,8 +303,9 @@
         "settings": [
           {
             "type": "text",
-            "id": "delivery_title",
-            "label": "Title"
+            "id": "block_title",
+            "label": "Title",
+            "default": "Select Your First Delivery Date:"
           }, {
             "type": "text",
             "id": "date_title",

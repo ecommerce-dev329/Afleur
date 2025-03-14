@@ -1251,6 +1251,21 @@ responsive-image img {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----Código Custom-----*/
 /*Nav*/
 .site-header__inner .f-site-nav__item a{
@@ -1311,18 +1326,14 @@ responsive-image img {
   text-align: center;
 }
 
-.gcw-txt--variant-name, .gcw-txt--variant-price {
-  font-size: 17px !important;
-  line-height: 1!important;
-}
 
-.order-calendar-button-click {
-  background-color: #ff2424!important;
-  border-color: #ff2323 !important;
-}
-div.rmdp-week-day {
-  color: #3746fd !important;
-}
-div[data-essential-upsell-element="header"] {
-  padding-inline-start: 0 !important;
-}
+
+
+
+
+
+
+
+
+
+

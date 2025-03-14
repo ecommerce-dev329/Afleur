@@ -76,7 +76,11 @@ if (!customElements.get('product-form')) {
 			}
 
       const formData = new FormData(this.form)
-
+	const addonProducts = getAddOnProduct();
+		for (const [index,addonProduct] of addonProducts.entries()) {
+			formData.append(`items[${index + 1}][id]`,addonProduct);
+			formData.append(`items[${index + 1}][quantity]`,1);
+		}
       if (this.cartDrawer) {
         formData.append(
           'sections',
