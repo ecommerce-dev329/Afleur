@@ -1,0 +1,40 @@
+{% assign vrn_block = section.blocks | where: "type", "variant_block" %}
+
+<div class="block-wrapper variant-size">
+  <div class="block-title">1. {{ block.settings.block_title }}</div>
+  <div class="block-content-wrapper block-content-wrapper-grid_3">
+    {% if sub_product.variants != blank %}
+      {% for vrn in sub_product.variants %}
+        {% for vrn_block_item in vrn_block %}
+          {% if forloop.index == forloop.parentloop.index %}
+            <div class="variant-size-item-wrapper radio-wrapper">
+              <label class="radio-cover">
+                <input
+                  type='radio'
+                  name="variant-size"
+                  {% if variant.available == false %}
+                  disabled{% endif %}
+                  {% if forloop.index == 2 %}
+                  checked{% endif %}
+                  data-radio-type="variant-size" />
+                <div class="check-wrapper">
+                  {% render 'icon-check-vector' %}
+                </div>
+              </label>
+              <div class="block-content-item quantity-variant-item" data-variant_id="{{ vrn.id }}">
+                {{ vrn_block_item.settings.variant_image | image_url: width: auto | image_tag: loading: "lazy", alt: vrn_block_item.variant_image }}
+                <div class="variant-title">
+                  {% if vrn_block_item.settings.variant_title == blank %}
+                    {{ vrn.title }}
+                  {% else %}
+                    {{ vrn_block_item.settings.variant_title }}
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

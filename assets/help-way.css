@@ -1,0 +1,71 @@
+.section--help-way * {
+  color: #171717;
+}
+.section--help-way {
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+.section--help-way .heading {
+  text-align: center;
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 26.4px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.section--help-way .help-way-item-wrapper {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+.section--help-way .help-way-item {
+  display: flex;
+  padding: 28px;
+  column-gap: 15px;
+  align-items: center;
+  border-radius: 10px;
+  width: 33%;
+  border: 1px solid #d1d1d1;
+  justify-content: space-between;
+}
+.section--help-way .text-wrapper {
+  width: 100%;
+}
+.section--help-way .item-title {
+  font-family: Reuben;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.section--help-way .item-description * {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  font-family: Mixta Sharp;
+}
+
+.section--help-way .icon-wrapper img {
+  width: 30px;
+  height: auto;
+  max-width: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .section--help-way .section--help-way-block-grid_2 .help-way-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .section--help-way .section--help-way-block-grid_2 {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}

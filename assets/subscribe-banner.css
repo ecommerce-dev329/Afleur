@@ -16,7 +16,7 @@
   gap: 15px;
   width: 100%;
   display: flex;
-  color: #000;
+  color: #171717;
   position: absolute;
   flex-direction: column;
 }
@@ -57,6 +57,7 @@
   color: #fff;
   border-radius: 10px;
 }
+
 @media screen and (max-width: 850px) {
   .banner-text-wrapper {
     padding-top: 40px !important;
@@ -75,9 +76,32 @@
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
+  .section--subscribe-banner .heading {
+    font-size: 45px;
+  }
+  .section--subscribe-banner .subscribe-item {
+    font-size: 18px;
+    list-style: none;
+  }
 }
 @media screen and (max-width: 560px) {
   .banner-text-wrapper {
     padding-inline: 10px !important;
+  }
+  .section--narrow-width {
+    padding-inline: 20px;
+  }
+  .section--subscribe-banner .heading {
+    font-size: 35px;
+  }
+  .section--subscribe-banner .subscribe-item {
+    font-size: 16px;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section--subscribe-banner .banner-image-wrapper img.mobile-image {
+    aspect-ratio: 1 / 1.5;
   }
 }

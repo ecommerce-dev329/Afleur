@@ -1,0 +1,16 @@
+{{ 'product-addon.css' |  asset_url |  stylesheet_tag }}
+
+<div class='product-addon-wrapper'>
+    <div class='product-addon-heading'>{{ block_setting.heading }}</div>
+    <div class='product-addon-list'>
+        {%- for metafield in product.metafields.custom.add_on_products.value.add_on_products.value -%}
+          <div class="addon-item" product_id="{{ metafield.selected_or_first_available_variant.id }}">
+            <div class="image">
+                <img src="{{ metafield.featured_image |  img_url: '100x' }}" width="100px" height="auto" />
+            </div>
+            <h5 class="product-title">{{ metafield.title }}</h5>
+            <p class="product-price">+{{ metafield.price |  money }}</p>
+          </div>
+        {%- endfor -%}
+    </div>
+</div>

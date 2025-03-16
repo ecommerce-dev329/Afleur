@@ -30,8 +30,20 @@
   if product.metafields['foxecom-bs-kit']['variant-images'].value.enable and product.has_only_default_variant == false
     assign enable_variant_group_img = true
   endif
-
-  if product.media.size < 2 and media_layout == 'carousel'
+  assign productMediaCount = 0
+  for media in product.media
+    assign variantImage = false
+    for variant in product.variants
+      if media == variant.featured_media
+        assign variantImage = true
+        break
+      endif
+    endfor
+    if variantImage
+      assign productMediaCount = productMediaCount | plus: 1
+    endif
+  endfor
+  if productMediaCount < 2 and media_layout == 'carousel'
     assign wrapper_class = ' flickity-disabled'
   endif
 
@@ -51,16 +63,16 @@
   endif
 
   assign has_only_one_image = false
-  if product.media.size < 2
+  if productMediaCount < 2
     assign has_only_one_image = true
   endif
 
-  if product.media.size < 3
+  if productMediaCount < 3
     assign flickity_class = flickity_class | append: ' flickity-controls-group-mb__inner'
   endif
 
   capture styles
-    if product.media.size > 9
+    if productMediaCount > 9
       echo '--pagination-width: 4rem;'
     else
       echo '--pagination-width: 2.5rem;'
@@ -87,8 +99,7 @@
     assign animated = true
   endif
 %}
-
-{% if product.media.size > 0 %}
+{% if productMediaCount > 0 %}
   <media-gallery
     id="MediaGallery-{{ section.id }}"
     role="region"
@@ -113,7 +124,7 @@
       class="f-product__media-viewer{% if has_only_one_image %} f-product__media-only--image{% endif %} f-product__media-viewer--{{ media_layout }} f-product__media-viewer--thumbs-{{ mobile_thumbnails }}"
       style="--media-aspect-ratio: {{ aspect_ratio }}"
     >
-      {% if product.media.size > 0 %}
+      {% if productMediaCount > 0 %}
         <div
           data-media-viewer
           {% if animated and media_layout == 'carousel' %}
@@ -128,26 +139,34 @@
             class="f-product__media-list {% if has_only_one_image %} f-product__media-only--image{% endif %} flickity-button-initialized flickity-nav-inner h-full overflow-hidden f-product__media-list--{{ media_layout }}{{ wrapper_class }}{{ flickity_class }}"
             data-media-layout="{{ media_layout }}"
             role="list"
-            {% if product.media.size > 1 %}
+            {% if productMediaCount > 1 %}
               style="{{ styles }}"
             {% endif %}
           >
             {%- for media in product.media -%}
-              {% render 'product-thumbnail',
-                media: media,
-                index: forloop.index0,
-                loop: enable_video_looping,
-                modal_id: section.id,
-                xr_button: true,
-                media_width: media_width
-              %}
+              {%- assign variantImage = false -%}
+              {%  for variant in product.variants %}
+                {% if variant.featured_media == media %}
+                  {%- assign variantImage = true -%}
+                {% endif %}
+              {% endfor %}
+              {% if variantImage == false %}
+                {% render 'product-thumbnail',
+                  media: media,
+                  index: forloop.index0,
+                  loop: enable_video_looping,
+                  modal_id: section.id,
+                  xr_button: true,
+                  media_width: media_width
+                %}
+              {% endif %}
             {%- endfor -%}
-            {% if mobile_thumbnails == 'hide' and product.media.size > 1 %}
+            {% if mobile_thumbnails == 'hide' and productMediaCount > 1 %}
               <div class="flickity-page-counter no-js-hidden md:hidden">
                 <span class="flickity-counter--current">1</span>
                 <span aria-hidden="true"> / </span>
                 <span class="visually-hidden">{{ 'sections.slideshow.of' | t }}</span>
-                <span class="flickity-counter--total">{{ product.media.size }}</span>
+                <span class="flickity-counter--total">{{ productMediaCount }}</span>
               </div>
             {% endif %}
           </flickity-component>
@@ -174,16 +193,16 @@
           <span>{{ 'products.product.xr_button' | t }}</span>
         </button>
       {%- endif -%}
-      {%- if product.media.size > 1 and media_layout == 'carousel' or mobile_thumbnails == 'show' -%}
+      {%- if productMediaCount > 1 and media_layout == 'carousel' or mobile_thumbnails == 'show' -%}
         {% liquid
           assign transition = ''
           assign thumb_loop = true
 
-          if product.media.size < 6
+          if productMediaCount < 6
             assign thumb_loop = false
             assign transition = ' md:disable-transition'
           endif
-          if product.media.size < 5
+          if productMediaCount < 5
             assign transition = ' disable-transition'
           endif
         %}
@@ -198,61 +217,69 @@
             style="--column-gap: 6px;--aspect-ratio: 5;"
           >
             {%- for media in product.media -%}
-              <div
-                id="GalleryThumbnailItem-{{ section.id }}-{{ forloop.index }}"
-                data-media-id="{{ media.id }}"
-                data-media-type="{{ media.media_type }}"
-                data-thumbnail-type="{{ media.media_type }}"
-                class="f-column f-product__media-thumbnails-item"
-                data-thumbnail-index="{{ forloop.index0 }}"
-              >
+              {%  assign variantImage = false %}
+              {% for variant in product.variants %}
+                {% if variant.featured_media == media %}
+                  {%  assign variantImage = true %}
+                {% endif %}
+              {% endfor %}
+              {%  unless variantImage  %}
                 <div
-                  class="f-product__media-thumbnails-item-wrap block w-full{% if animated %} f-scroll-trigger animate--{{ animation_effect }}{% endif %}"
-                  {% if animated %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
+                  id="GalleryThumbnailItem-{{ section.id }}-{{ forloop.index }}"
+                  data-media-id="{{ media.id }}"
+                  data-media-type="{{ media.media_type }}"
+                  data-thumbnail-type="{{ media.media_type }}"
+                  class="f-column f-product__media-thumbnails-item"
+                  data-thumbnail-index="{{ forloop.index0 }}"
                 >
-                  {%- if media.media_type == 'model' -%}
-                    <span class="f-product__media-badge" aria-hidden="true">
-                      {% comment %} theme-check-disable {% endcomment %}
-                      {{ 'icon-3d-model.svg' | inline_asset_content }}
-                      {% comment %} theme-check-enable {% endcomment %}
-                    </span>
-                  {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
-                    <span class="f-product__media-badge" aria-hidden="true">
-                      {% comment %} theme-check-disable {% endcomment %}
-                      {{ 'icon-play.svg' | inline_asset_content }}
-                      {% comment %} theme-check-enable {% endcomment %}
-                    </span>
-                  {%- endif -%}
-                  <responsive-image
-                    data-image-id="{{ image.id }}"
-                    class="f-image"
-                    data-image-loading
-                    style="--aspect-ratio: 1"
+                  <div
+                    class="f-product__media-thumbnails-item-wrap block w-full{% if animated %} f-scroll-trigger animate--{{ animation_effect }}{% endif %}"
+                    {% if animated %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
                   >
-                    <img
-                      srcset="
-                        {% if media.preview_image.width >= 54 %}{{ media.preview_image | image_url: width: 54 }} 54w,{% endif %}
-                        {% if media.preview_image.width >= 74 %}{{ media.preview_image | image_url: width: 74 }} 74w,{% endif %}
-                        {% if media.preview_image.width >= 104 %}{{ media.preview_image | image_url: width: 104 }} 104w,{% endif %}
-                        {% if media.preview_image.width >= 162 %}{{ media.preview_image | image_url: width: 162 }} 162w,{% endif %}
-                        {% if media.preview_image.width >= 208 %}{{ media.preview_image | image_url: width: 208 }} 208w,{% endif %}
-                        {% if media.preview_image.width >= 324 %}{{ media.preview_image | image_url: width: 324 }} 324w,{% endif %}
-                        {% if media.preview_image.width >= 416 %}{{ media.preview_image | image_url: width: 416 }} 416w,{% endif %},
-                        {{ media.preview_image | image_url }} {{ media.preview_image.width }}w
-                      "
-                      src="{{ media.preview_image | image_url: width: 100 }}"
-                      sizes="(min-width: {{ settings.container_width }}px) calc(({{ settings.container_width | minus: 100 | times: 0.45 | round }} - 4rem) / 4), (min-width: 990px) calc(({{ 0.45 | times: 100 }}vw - 4rem) / 4), (min-width: 750px) calc((100vw - 15rem) / 8), calc((100vw - 14rem) / 3)"
-                      alt="{{ media.alt | escape }}"
-                      height="100"
-                      width="100"
-                      loading="lazy"
+                    {%- if media.media_type == 'model' -%}
+                      <span class="f-product__media-badge" aria-hidden="true">
+                        {% comment %} theme-check-disable {% endcomment %}
+                        {{ 'icon-3d-model.svg' | inline_asset_content }}
+                        {% comment %} theme-check-enable {% endcomment %}
+                      </span>
+                    {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+                      <span class="f-product__media-badge" aria-hidden="true">
+                        {% comment %} theme-check-disable {% endcomment %}
+                        {{ 'icon-play.svg' | inline_asset_content }}
+                        {% comment %} theme-check-enable {% endcomment %}
+                      </span>
+                    {%- endif -%}
+                    <responsive-image
+                      data-image-id="{{ image.id }}"
+                      class="f-image"
+                      data-image-loading
+                      style="--aspect-ratio: 1"
                     >
-                  </responsive-image>
+                      <img
+                        srcset="
+                          {% if media.preview_image.width >= 54 %}{{ media.preview_image | image_url: width: 54 }} 54w,{% endif %}
+                          {% if media.preview_image.width >= 74 %}{{ media.preview_image | image_url: width: 74 }} 74w,{% endif %}
+                          {% if media.preview_image.width >= 104 %}{{ media.preview_image | image_url: width: 104 }} 104w,{% endif %}
+                          {% if media.preview_image.width >= 162 %}{{ media.preview_image | image_url: width: 162 }} 162w,{% endif %}
+                          {% if media.preview_image.width >= 208 %}{{ media.preview_image | image_url: width: 208 }} 208w,{% endif %}
+                          {% if media.preview_image.width >= 324 %}{{ media.preview_image | image_url: width: 324 }} 324w,{% endif %}
+                          {% if media.preview_image.width >= 416 %}{{ media.preview_image | image_url: width: 416 }} 416w,{% endif %},
+                          {{ media.preview_image | image_url }} {{ media.preview_image.width }}w
+                        "
+                        src="{{ media.preview_image | image_url: width: 100 }}"
+                        sizes="(min-width: {{ settings.container_width }}px) calc(({{ settings.container_width | minus: 100 | times: 0.45 | round }} - 4rem) / 4), (min-width: 990px) calc(({{ 0.45 | times: 100 }}vw - 4rem) / 4), (min-width: 750px) calc((100vw - 15rem) / 8), calc((100vw - 14rem) / 3)"
+                        alt="{{ media.alt | escape }}"
+                        height="100"
+                        width="100"
+                        loading="lazy"
+                      >
+                    </responsive-image>
+                  </div>
                 </div>
-              </div>
+            {% endunless %}
             {%- endfor -%}
           </flickity-component>
         </div>

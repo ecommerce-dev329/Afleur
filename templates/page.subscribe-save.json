@@ -122,16 +122,123 @@
       "settings": {
         "heading": "How it works",
         "dsk_grid": "grid_4",
-        "dsk_pad_top": 80,
-        "dsk_pad_bottom": 80,
-        "mbl_pad_top": 50,
-        "mbl_pad_bottom": 50
+        "dsk_pad_top": 70,
+        "dsk_pad_bottom": 40,
+        "mbl_pad_top": 35,
+        "mbl_pad_bottom": 35
+      }
+    },
+    "build_subscription_XP9ceG": {
+      "type": "build-subscription",
+      "blocks": {
+        "size_YUQENx": {
+          "type": "size",
+          "settings": {
+            "block_title": "Select Size:",
+            "sub_product": ""
+          }
+        },
+        "variant_block_RdRV9W": {
+          "type": "variant_block",
+          "settings": {
+            "variant_image": "shopify://shop_images/4ef37c23c0ff90f9fdd7dec004b325a5.jpg",
+            "variant_title": "The Miniature (12)"
+          }
+        },
+        "variant_block_WibVfh": {
+          "type": "variant_block",
+          "settings": {
+            "variant_image": "shopify://shop_images/4ef37c23c0ff90f9fdd7dec004b325a5.jpg",
+            "variant_title": "The Signature (24)"
+          }
+        },
+        "variant_block_3eeUYX": {
+          "type": "variant_block",
+          "settings": {
+            "variant_image": "shopify://shop_images/4ef37c23c0ff90f9fdd7dec004b325a5.jpg",
+            "variant_title": "The Grand (36)"
+          }
+        },
+        "payment_plan_HPLack": {
+          "type": "payment_plan",
+          "settings": {
+            "freq_block_title": "Delivery Frequency:",
+            "plan_block_title": "Select your plan:",
+            "plan_title_1": "Pay-As-You-Go",
+            "plan_type_1": "+ Delivery",
+            "plan_description_1": "Get charged only when each delivery is made—no upfront commitment, just flexible, fresh flowers when you want.",
+            "plan_title_2": "PRE-PAID",
+            "plan_type_2": "One -Time Payment",
+            "plan_description_2": "Pay upfront for multiple deliveries and enjoy worry-free gifting with flowers arriving right on schedule."
+          }
+        },
+        "delivery_date_YgVr7U": {
+          "type": "delivery_date",
+          "settings": {
+            "block_title": "Select Your First Delivery Date:",
+            "date_title": "Receive by:",
+            "delivery_date_description": "Your Flowers, Your Schedule: Choose your preferred delivery day and frequency, and we'll stick to it. For example, if your first delivery arrives on a Thursday every two weeks, your next blooms will arrive two Thursdays later. For pay-as-you-go plans, charges are processed seven days before each delivery."
+          }
+        }
+      },
+      "block_order": [
+        "size_YUQENx",
+        "variant_block_RdRV9W",
+        "variant_block_WibVfh",
+        "variant_block_3eeUYX",
+        "payment_plan_HPLack",
+        "delivery_date_YgVr7U"
+      ],
+      "settings": {
+        "sub_product": "reve-pastel",
+        "heading": "Build Your Subscription",
+        "add_to_bag_button": "ADD TO BAG",
+        "dsk_pad_top": 40,
+        "dsk_pad_bottom": 40,
+        "mbl_pad_top": 35,
+        "mbl_pad_bottom": 35
+      }
+    },
+    "help_way_4PdVWh": {
+      "type": "help-way",
+      "blocks": {
+        "help_item_xPz987": {
+          "type": "help_item",
+          "settings": {
+            "icon": "shopify://shop_images/Group.png",
+            "title": "Contact us",
+            "description": "<p>Chat with our Team: </p><p>Contact@AFLEUR.com</p>",
+            "item_link": ""
+          }
+        },
+        "help_item_tz9y3r": {
+          "type": "help_item",
+          "settings": {
+            "icon": "shopify://shop_images/Group_18.png",
+            "title": "FAQs",
+            "description": "<p>Visit our full list of </p><p>common questions.</p>",
+            "item_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "help_item_xPz987",
+        "help_item_tz9y3r"
+      ],
+      "settings": {
+        "heading": "Need help?",
+        "dsk_pad_top": 40,
+        "dsk_pad_bottom": 25,
+        "mbl_pad_top": 35,
+        "mbl_pad_bottom": 35
       }
     }
   },
   "order": [
     "main",
     "subscribe_banner_GQbM64",
-    "subscribe_works_CyamQX"
+    "subscribe_works_CyamQX",
+    "build_subscription_XP9ceG",
+    "help_way_4PdVWh"
   ]
 }

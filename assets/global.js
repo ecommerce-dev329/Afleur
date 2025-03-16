@@ -620,6 +620,7 @@ class SliderComponent extends HTMLElement {
     }
   }
   initSlider() {
+    debugger;
     this.slider = new window.FoxTheme.Slider(this);
     this.disablePointerMove = this.dataset.disablePointerMove || true;
     this.paginateCounterWrapper = this.querySelector(".flickity-page-counter");

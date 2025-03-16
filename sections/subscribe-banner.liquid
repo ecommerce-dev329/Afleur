@@ -47,19 +47,7 @@
     bottom: 0;
   }
 
-  @media screen and (max-width: 560px) {
-    .banner-text-wrapper {
-      padding-top: {{ section.settings.mbl_pad_top }}px !important;
-      padding-bottom: {{ section.settings.mbl_pad_bottom }}px !important;
-      padding-inline: {{ section.settings.mbl_pad_inline }}px !important;
-    }
-    .section--subscribe-banner .heading {
-      font-size: 35px;
-    }
-    .section--subscribe-banner .subscribe-item {
-      font-size: 16px;
-      list-style: none;
-    }
+  @media screen and (max-width: 748px) {
     .banner-text-wrapper-mbl-left_top {
       left: 0;
       top: 0;
@@ -105,6 +93,13 @@
       bottom: 0;
     }
   }
+  @media screen and (max-width: 520px) {
+    .banner-text-wrapper {
+      padding-top: {{ section.settings.mbl_pad_top }}px !important;
+      padding-bottom: {{ section.settings.mbl_pad_bottom }}px !important;
+      padding-inline: {{ section.settings.mbl_pad_inline }}px !important;
+    }
+  }
 {% endstyle %}
 
 <div class="section--subscribe-banner">
@@ -116,9 +111,6 @@
       {{ section.settings.mbl_banner_image | image_url: width: auto | image_tag: loading: 'lazy', alt: section.settings.mbl_banner_image, class: "desktop-hidden mobile-image" }}
     {%- endif -%}
   </div>
-  <script>
-    console.log({{ section.settings.dsk_align | json }})
-  </script>
 
   <div class="banner-text-wrapper banner-text-wrapper-dsk-{{ section.settings.dsk_align }} banner-text-wrapper-mbl-{{ section.settings.mbl_align }}">
     <div class="heading">{{ section.settings.heading }}</div>

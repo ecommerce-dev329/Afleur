@@ -76,7 +76,7 @@
                               style="--aspect-ratio: {{ item.image.aspect_ratio | default: '1' }}"
                             >
                               <img
-                                src="{{ item.image | image_url: width: 300 }}"
+                                src="{{ item.product.featured_image | image_url: width: 300 }}"
                                 alt="{{ item.image.alt | escape }}"
                                 loading="lazy"
                                 width="150"

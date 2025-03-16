@@ -1,0 +1,19 @@
+body {
+  background-color: #fffcf4;
+}
+.section--narrow-width {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding-inline: 205px;
+}
+@media screen and (max-width: 1300px) {
+  .section--narrow-width {
+    padding-inline: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section--narrow-width {
+    padding-inline: 50px;
+  }
+}

@@ -742,6 +742,8 @@
               </details>
             </noscript>
           {% endif %}
+        {%- when 'add_on' -%}
+          {% render 'product-addon',product: product,block_setting: block.settings %}
         {%- when 'complementary' -%}
           {{ 'component-product-card.css' | asset_url | stylesheet_tag }}
           <product-recommendations
