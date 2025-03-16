@@ -12,35 +12,83 @@
 {%- endstyle -%}
 {{ 'build-subscription.css' | asset_url | stylesheet_tag }}
 
-{% assign sub_product = section.settings.sub_product %}
+{% assign product = section.settings.sub_product %}
 
 <div class="section--build-subscription section--narrow-width">
   <div class="build-subscription-heading">{{ section.settings.heading }}</div>
+
   {%- if section.blocks != blank -%}
-    {%- for block in section.blocks -%}
-      {% case block.type %}
-        {% when "size" %}
-          {% render 'build-subscription-variant-selector'
-            , section: section
-            , sub_product: sub_product
-            , block: block %}
-        {% when "delivery_frequency" %}
-          {% render 'build-subscription-delivery-frequency'
-            , block: block %}
-        {% when "payment_plan" %}
-          {% render 'build-subscription-payment-plan'
-            , block: block %}
-        {% when "delivery_date" %}
-          {% render 'build-subscription-delivery-date'
-            , block: block %}
-      {% endcase %}
-    {%- endfor -%}
+
+    {% assign size_block = section.blocks | where: 'type', 'size' | first %}
+    {% assign payment_block = section.blocks | where: "type", "payment_plan" | first %}
+    {% assign delivery_date_block = section.blocks | where: 'type', 'delivery_date' | first %}
+
+    {% if size_block != blank %}
+      {% render 'build-subscription-variant-selector'
+        , section: section
+        , sub_product: product
+        , block: size_block %}
+    {% endif %}
+
+    {% if payment_block != blank %}
+      {%- render 'build-subscription-payment-plan'
+        , product: product
+        , section: section
+        , block: payment_block -%}
+    {% endif %}
+
+    {% if delivery_date_block %}
+      {% render 'build-subscription-delivery-date'
+        , block: delivery_date_block %}
+    {% endif %}
+
   {%- endif -%}
+
   {% if section.settings.add_to_bag_button %}
-    <button class="add-to-bag f-product-form__submit btn btn--primary">{{ section.settings.add_to_bag_button }}</button>
+    <product-form class="f-product-form f-main-product-form">
+      {%- form 'product'
+        , product
+        , id: product_form_id
+        , class: 'main-product-form'
+        , novalidate: 'novalidate'
+        , data-type: 'add-to-cart-form' -%}
+        <input
+          type="hidden"
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}"
+          disabled>
+        {%- if gift_card_recipient_feature_active -%}
+          {%- render 'gift-card-recipient-form'
+            , product: product
+            , form: form
+            , section: section -%}
+        {%- endif -%}
+
+        <div class="f-product-form__buttons{% if show_dynamic_checkout and product.selling_plan_groups == empty %} f-product-form__buttons--show-buynow{% endif %}">
+          <button
+            type="submit"
+            name="add"
+            class="add-subscription f-product-form__submit btn {% if show_dynamic_checkout and product.selling_plan_groups == empty %}btn--secondary{% else %}btn--primary{% endif %}"
+            {% if product.selected_or_first_available_variant.available == false %}
+            disabled
+            {% endif %}>
+            <span>
+              {%- if product.selected_or_first_available_variant.available -%}
+                {{ section.settings.add_to_bag_button }}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+          </span>
+            {% comment %} theme-check-disable {% endcomment %}
+            {{ 'icon-spinner.svg' | inline_asset_content }}
+          {% comment %} theme-check-enable {% endcomment %}
+          </button>
+          <div class="f-product-form__error-message-wrapper" role="alert"></div>
+        </div>
+      {%- endform -%}
+    </product-form>
   {% endif %}
 </div>
-
 <script src="{{ 'build-subscription.js' |  asset_url }}" defer></script>
 
 {% schema %}
@@ -123,8 +171,7 @@
             "label": "Product"
           }
         ]
-      },
-      {
+      }, {
         "name": "Variant Block",
         "type": "variant_block",
         "settings": [
@@ -138,42 +185,19 @@
             "label": "TItle"
           }
         ]
-      },
-      {
-        "name": "Delivery Frequency",
-        "type": "delivery_frequency",
-        "settings": [
-          {
-            "type": "text",
-            "id": "block_title",
-            "label": "Title",
-            "default": "Delivery Frequency:"
-          }, {
-            "type": "text",
-            "id": "weekly_text",
-            "label": "Weekly Text",
-            "default": "Weekly"
-          }, {
-            "type": "text",
-            "id": "bi_weekly_text",
-            "label": "Bi Weekly Text",
-            "default": "Bi-Weekly"
-          }, {
-            "type": "text",
-            "id": "monthly_text",
-            "label": "Monthly Text",
-            "default": "Monthly"
-          }
-        ]
-      },
-      {
+      }, {
         "name": "Payment Plan",
         "type": "payment_plan",
         "settings": [
           {
             "type": "text",
-            "id": "block_title",
-            "label": "Title",
+            "id": "freq_block_title",
+            "label": "Frequency Title"
+          },
+          {
+            "type": "text",
+            "id": "plan_block_title",
+            "label": "Payment Plan Title",
             "default": "Select your plan:"
           },
           {
@@ -185,8 +209,7 @@
             "id": "plan_title_1",
             "label": "Title",
             "default": "Pay-As-You-Go"
-          },
-          {
+          }, {
             "type": "text",
             "id": "plan_type_1",
             "label": "Type",
@@ -246,8 +269,6 @@
         "blocks": [
           {
             "type": "size"
-          }, {
-            "type": "delivery_frequency"
           }, {
             "type": "payment_plan"
           }, {

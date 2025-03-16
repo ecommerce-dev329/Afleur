@@ -18,30 +18,41 @@
   class="no-js{% if settings.page_transition %} overflow-hidden{% endif %}"
   lang="{{ request.locale.iso_code }}"
   {% if enable_rtl %}
-    dir="rtl"
-  {% endif %}
->
+  dir="rtl"
+  {% endif %}>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link
+      rel="preconnect"
+      href="https://cdn.shopify.com"
+      crossorigin>
 
     {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link
+        rel="preconnect"
+        href="https://fonts.shopifycdn.com"
+        crossorigin>
     {%- endunless -%}
 
     <title>
       {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- if current_tags %}
+        &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %}
+        &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %}
+        &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
     {% if page_description %}
@@ -60,36 +71,30 @@
       rel="preload"
       href="{{ 'non-critical.css' | asset_url }}"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet';"
-    >
+      onload="this.onload=null;this.rel='stylesheet';">
     <link
       rel="preload"
       href="{{ 'flickity-component.css' | asset_url }}"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet';"
-    >
+      onload="this.onload=null;this.rel='stylesheet';">
     <link
       rel="preload"
       href="{{ 'modal-component.css' | asset_url }}"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet';"
-    >
+      onload="this.onload=null;this.rel='stylesheet';">
     <link
       rel="preload"
       href="{{ 'drawer-component.css' | asset_url }}"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet';"
-    >
+      onload="this.onload=null;this.rel='stylesheet';">
 
-    {%- if linklists['gift-wrapping'].links != blank
-      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    {%- if linklists['gift-wrapping'].links != blank and linklists['gift-wrapping'].links.first.type == 'product_link'
     -%}
       <link
         rel="stylesheet"
         href="{{ 'component-gift-wrapping.css' | asset_url }}"
         media="print"
-        onload="this.media='all'"
-      >
+        onload="this.media='all'">
       <noscript>{{ 'component-gift-wrapping.css' | asset_url | stylesheet_tag }}</noscript>
     {%- endif -%}
 
@@ -98,8 +103,7 @@
         rel="preload"
         href="{{ 'rtl.css' | asset_url }}"
         as="style"
-        onload="this.onload=null;this.rel='stylesheet';"
-      >
+        onload="this.onload=null;this.rel='stylesheet';">
     {% endif %}
 
     <noscript>
@@ -117,7 +121,7 @@
     <script src="{{ 'lazy-image.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
     {{ 'custom.js' | asset_url | script_tag }}
-    {{ 'product-addon.js' |  asset_url |  script_tag }}
+    {{ 'product-addon.js' | asset_url | script_tag }}
 
     {%- if settings.cart_recommendations_enable -%}
       <script src="{{ 'cart-recommendations.js' | asset_url }}" defer="defer"></script>
@@ -142,8 +146,7 @@
         href="{{ settings.type_body_font | font_url }}"
         type="font/woff2"
         crossorigin
-        fetchpriority="high"
-      >
+        fetchpriority="high">
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
       <link
@@ -152,13 +155,12 @@
         href="{{ settings.type_header_font | font_url }}"
         type="font/woff2"
         crossorigin
-        fetchpriority="high"
-      >
-    {%- endunless -%}
+        fetchpriority="high">
+  {%- endunless -%}
 
     {% comment %} Custom metafield for head tag like GTag tracking {% endcomment %}
     {{ shop.metafields.foxtheme.code_head.value }}
-  {% include 'pagefly-app-header' %}</head>
+    {% include 'pagefly-app-header' %}</head>
 
   <body class="template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }}{% if settings.page_transition %} overflow-hidden{% endif %}">
     {% comment %} Custom metafield for body tag like GTag tracking {% endcomment %}
@@ -183,7 +185,11 @@
 
       {% sections 'header-group' %}
 
-      <main id="MainContent" class="site-main focus-none" role="main" tabindex="-1">
+      <main
+        id="MainContent"
+        class="site-main focus-none"
+        role="main"
+        tabindex="-1">
         {{ content_for_layout }}
       </main>
       {% liquid
@@ -211,17 +217,16 @@
     {% if settings.pcard_show_color_swatch %}
       <script src="{{ 'color-swatch.js' | asset_url }}" defer="defer"></script>
     {% endif %}
-    {%- if linklists['gift-wrapping'].links != blank
-      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    {%- if linklists['gift-wrapping'].links != blank and linklists['gift-wrapping'].links.first.type == 'product_link'
     -%}
       <script src="{{ 'gift-wrapping.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     {%- if request.design_mode -%}
       <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  <!-- WPD Start -->
-                {% if customer.tags.size > 0 and template != 'cart' %}
-                <script>
+    <!-- WPD Start -->
+    {% if customer.tags.size > 0 and template != 'cart' %}
+      <script>
                     document.addEventListener('DOMContentLoaded', function() {
                       let checkoutbtninterval = setInterval(function(){
                         var x=document.querySelectorAll("input[name='checkout'], button[name='checkout'], input[name='goto_pp'], button[name='goto_pp'], input[name='goto_gc'], button[name='goto_gc'], [href$='checkout']");
@@ -235,20 +240,21 @@
                             }
                         },500)
                 });
-              </script>
-               {% endif %}
-         
+      </script>
+    {% endif %}
 
-               {% if customer.tags.size > 0 and template == 'cart' %}
-                 {% include 'wcp_cart' %}
-               {% endif %}
-               <!-- WPD End -->
+
+    {% if customer.tags.size > 0 and template == 'cart' %}
+      {% include 'wcp_cart' %}
+    {% endif %}
+    <!-- WPD End -->
 
     <style>
 
       .f-mobile-nav__inner .f-mobile-nav__item collapsible-tab .f-mobile-nav__sub-item.f-mobile-nav__sub-item--level3 .f-mobile-nav__sub-link {
-    font-weight: 400;
-}
+        font-weight: 400;
+      }
     </style>
+  {% comment %} <script src="https://cdn.loopwork.co/sdk/loop-sdk.min.js"></script> {% endcomment %}
   </body>
 </html>

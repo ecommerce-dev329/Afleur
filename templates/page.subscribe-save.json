@@ -159,19 +159,11 @@
             "variant_title": "The Grand (36)"
           }
         },
-        "delivery_frequency_TFJQYp": {
-          "type": "delivery_frequency",
-          "settings": {
-            "block_title": "Delivery Frequency:",
-            "weekly_text": "Weekly",
-            "bi_weekly_text": "Bi-Weekly",
-            "monthly_text": "Monthly"
-          }
-        },
         "payment_plan_HPLack": {
           "type": "payment_plan",
           "settings": {
-            "block_title": "Select your plan:",
+            "freq_block_title": "Delivery Frequency:",
+            "plan_block_title": "Select your plan:",
             "plan_title_1": "Pay-As-You-Go",
             "plan_type_1": "+ Delivery",
             "plan_description_1": "Get charged only when each delivery is made—no upfront commitment, just flexible, fresh flowers when you want.",
@@ -194,14 +186,13 @@
         "variant_block_RdRV9W",
         "variant_block_WibVfh",
         "variant_block_3eeUYX",
-        "delivery_frequency_TFJQYp",
         "payment_plan_HPLack",
         "delivery_date_YgVr7U"
       ],
       "settings": {
         "sub_product": "reve-pastel",
         "heading": "Build Your Subscription",
-        "add_to_bag_button": "ADD TO BAG - $125",
+        "add_to_bag_button": "ADD TO BAG",
         "dsk_pad_top": 40,
         "dsk_pad_bottom": 40,
         "mbl_pad_top": 35,
